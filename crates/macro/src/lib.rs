@@ -1,4 +1,6 @@
 #![doc(html_root_url = "https://docs.rs/wasm-bindgen-macro/0.2")]
+#![feature(allow_internal_unstable)]
+#![allow(internal_features)]
 
 extern crate proc_macro;
 
@@ -6,6 +8,7 @@ use proc_macro::TokenStream;
 use quote::quote;
 
 #[proc_macro_attribute]
+#[allow_internal_unstable(coverage_attribute)]
 pub fn wasm_bindgen(attr: TokenStream, input: TokenStream) -> TokenStream {
     match wasm_bindgen_macro_support::expand(attr.into(), input.into()) {
         Ok(tokens) => {
@@ -32,6 +35,7 @@ pub fn wasm_bindgen(attr: TokenStream, input: TokenStream) -> TokenStream {
 /// let worker = Worker::new(&wasm_bindgen::link_to!(module = "/src/worker.js"));
 /// ```
 #[proc_macro]
+#[allow_internal_unstable(coverage_attribute)]
 pub fn link_to(input: TokenStream) -> TokenStream {
     match wasm_bindgen_macro_support::expand_link_to(input.into()) {
         Ok(tokens) => {
@@ -48,6 +52,7 @@ pub fn link_to(input: TokenStream) -> TokenStream {
 }
 
 #[proc_macro_attribute]
+#[allow_internal_unstable(coverage_attribute)]
 pub fn __wasm_bindgen_class_marker(attr: TokenStream, input: TokenStream) -> TokenStream {
     match wasm_bindgen_macro_support::expand_class_marker(attr.into(), input.into()) {
         Ok(tokens) => {

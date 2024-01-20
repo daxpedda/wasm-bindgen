@@ -272,7 +272,6 @@ impl Frame<'_> {
         match instr {
             Instr::Const(c) => match c.value {
                 Value::I32(n) => stack.push(n),
-                Value::I64(_) if coverage => stack.push(0),
                 _ => panic!("non-i32 constant. If you're compiling with profiling information you might want to set WASM_BINDGEN_UNSTABLE_TEST_COVERAGE (--coverage flag in wasm-pack)"),
             },
             Instr::LocalGet(e) => stack.push(self.locals.get(&e.local).cloned().unwrap_or(0)),
@@ -295,13 +294,6 @@ impl Frame<'_> {
             // Support simple arithmetic, mainly for the stack pointer
             // manipulation
             Instr::Binop(e) => {
-                if let BinaryOp::I64Add = e.op {
-                    if coverage {
-                        stack.pop();
-                        // The other one is 0 anyway
-                        return;
-                    }
-                }
                 let rhs = stack.pop().unwrap();
                 let lhs = stack.pop().unwrap();
                 stack.push(match e.op {
@@ -315,25 +307,12 @@ impl Frame<'_> {
             // mode where there's some traffic on the linear stack even when in
             // theory there doesn't need to be.
             Instr::Load(e) => {
-                if let LoadKind::I64 { .. } = e.kind {
-                    if coverage {
-                        stack.push(0);
-                        return;
-                    }
-                }
                 let address = stack.pop().unwrap();
                 let address = address as u32 + e.arg.offset;
                 assert!(address % 4 == 0);
                 stack.push(self.interp.mem[address as usize / 4])
             }
             Instr::Store(e) => {
-                if let StoreKind::I64 { .. } = e.kind {
-                    if coverage {
-                        stack.pop(); // value
-                        stack.pop(); // address
-                        return;
-                    }
-                }
                 let value = stack.pop().unwrap();
                 let address = stack.pop().unwrap();
                 let address = address as u32 + e.arg.offset;
@@ -386,7 +365,7 @@ impl Frame<'_> {
                             .get(e.func)
                             .name
                             .as_ref()
-                            .is_some_and(|n| n.starts_with("__wasm_call_ctors"))
+                            .is_some_and(|n| n.starts_with("__wasm_call_ctors") | n.starts_with("__llvm_profile_register_functions"))
                     {
                         return;
                     }

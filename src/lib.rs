@@ -8,6 +8,7 @@
 #![no_std]
 #![allow(coherence_leak_check)]
 #![doc(html_root_url = "https://docs.rs/wasm-bindgen/0.2")]
+#![feature(coverage_attribute)]
 
 use core::convert::TryFrom;
 use core::fmt;
@@ -1675,6 +1676,7 @@ pub mod __rt {
     /// in the object file and link the intrinsics.
     ///
     /// Ideas for how to improve this are most welcome!
+    #[coverage(off)]
     pub fn link_mem_intrinsics() {
         crate::externref::link_intrinsics();
     }
