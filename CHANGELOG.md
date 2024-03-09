@@ -1,6 +1,15 @@
 # `wasm-bindgen` Change Log
 --------------------------------------------------------------------------------
 
+## Unreleased
+
+### Added
+
+* Implement `From<NonNull<T>>` for `JsValue`.
+  [#3877](https://github.com/rustwasm/wasm-bindgen/pull/3877)
+
+--------------------------------------------------------------------------------
+
 ## [0.2.92](https://github.com/rustwasm/wasm-bindgen/compare/0.2.91...0.2.92)
 
 Released 2024-03-04
