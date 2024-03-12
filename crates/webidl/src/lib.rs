@@ -25,8 +25,9 @@ use crate::generator::{
 use crate::idl_type::ToIdlType;
 use crate::traverse::TraverseType;
 use crate::util::{
-    camel_case_ident, is_structural, is_type_unstable, read_dir, shouty_snake_case_ident,
-    snake_case_ident, throws, webidl_const_v_to_backend_const_v, TypePosition,
+    camel_case_ident, is_structural, is_type_unstable, optional_return_ty, read_dir,
+    shouty_snake_case_ident, snake_case_ident, throws, webidl_const_v_to_backend_const_v,
+    TypePosition,
 };
 use anyhow::Context;
 use anyhow::Result;
@@ -396,6 +397,9 @@ impl<'src> FirstPassRecord<'src> {
             .to_syn_type(TypePosition::Argument)
             .unwrap_or(None)?;
 
+        let return_ty =
+            optional_return_ty(idl_type.to_syn_type(TypePosition::Return).unwrap().unwrap());
+
         // Slice types aren't supported because they don't implement
         // `Into<JsValue>`
         match ty {
@@ -437,6 +441,7 @@ impl<'src> FirstPassRecord<'src> {
             name: rust_ident(&snake_case_ident(field.identifier.0)),
             js_name: field.identifier.0.to_string(),
             ty,
+            return_ty,
             is_js_value_ref_option_type,
             unstable: unstable_override,
         })
@@ -781,6 +786,12 @@ impl<'src> FirstPassRecord<'src> {
                             .to_syn_type(pos)
                             .unwrap()
                             .unwrap(),
+                        return_ty: optional_return_ty(
+                            idl_type::IdlType::Callback
+                                .to_syn_type(TypePosition::Return)
+                                .unwrap()
+                                .unwrap(),
+                        ),
                         is_js_value_ref_option_type: false,
                         unstable: false,
                     })

@@ -11,13 +11,31 @@
 * Add bindings for `queueMicrotask`.
   [#3981](https://github.com/rustwasm/wasm-bindgen/pull/3981)
 
+* Added bindings for `InputDeviceInfo` and `MediaTrackCapabilities`.
+  [#3935](https://github.com/rustwasm/wasm-bindgen/pull/3935)
+
+* Add bindings for `RTCRtpReceiver.getCapabilities(DOMString)` method.
+  [#3941](https://github.com/rustwasm/wasm-bindgen/pull/3941)
+
+* Add bindings for `VisualViewport`.
+  [#3931](https://github.com/rustwasm/wasm-bindgen/pull/3931)
+
+* Generate getters for all WebIDL dictionary types.
+  [#3993](https://github.com/rustwasm/wasm-bindgen/pull/3993)
+
 ### Changed
+
+* Stabilize Web Share API.
+  [#3882](https://github.com/rustwasm/wasm-bindgen/pull/3882)
 
 * Generate JS bindings for WebIDL dictionary setters instead of using `Reflect`. This increases the size of the Web API bindings but should be more performant. Also, importing getters/setters from JS now supports specifying the JS attribute name as a string, e.g. `#[wasm_bindgen(method, setter = "x-cdm-codecs")]`.
   [#3898](https://github.com/rustwasm/wasm-bindgen/pull/3898)
 
 * Greatly improve the performance of sending WebIDL 'string enums' across the JavaScript boundary by converting the enum variant string to/from an int.
   [#3915](https://github.com/rustwasm/wasm-bindgen/pull/3915)
+
+* Deprecate builder-pattern type setters for WebIDL dictionary types and introduce non-mutable setters instead.
+  [#3993](https://github.com/rustwasm/wasm-bindgen/pull/3993)
 
 ### Fixed
 

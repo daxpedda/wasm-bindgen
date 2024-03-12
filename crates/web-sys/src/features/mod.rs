@@ -2063,6 +2063,13 @@ mod gen_DomWindowResizeEventDetail;
 #[allow(unused_imports)]
 pub use gen_DomWindowResizeEventDetail::*;
 
+#[cfg(feature = "DoubleRange")]
+#[allow(non_snake_case)]
+mod gen_DoubleRange;
+#[cfg(feature = "DoubleRange")]
+#[allow(unused_imports)]
+pub use gen_DoubleRange::*;
+
 #[cfg(feature = "DragEvent")]
 #[allow(non_snake_case)]
 mod gen_DragEvent;
@@ -4877,6 +4884,13 @@ mod gen_ImageTrackList;
 #[allow(unused_imports)]
 pub use gen_ImageTrackList::*;
 
+#[cfg(feature = "InputDeviceInfo")]
+#[allow(non_snake_case)]
+mod gen_InputDeviceInfo;
+#[cfg(feature = "InputDeviceInfo")]
+#[allow(unused_imports)]
+pub use gen_InputDeviceInfo::*;
+
 #[cfg(feature = "InputEvent")]
 #[allow(non_snake_case)]
 mod gen_InputEvent;
@@ -5583,6 +5597,13 @@ mod gen_MediaStreamTrackState;
 #[cfg(feature = "MediaStreamTrackState")]
 #[allow(unused_imports)]
 pub use gen_MediaStreamTrackState::*;
+
+#[cfg(feature = "MediaTrackCapabilities")]
+#[allow(non_snake_case)]
+mod gen_MediaTrackCapabilities;
+#[cfg(feature = "MediaTrackCapabilities")]
+#[allow(unused_imports)]
+pub use gen_MediaTrackCapabilities::*;
 
 #[cfg(feature = "MediaTrackConstraintSet")]
 #[allow(non_snake_case)]
@@ -9616,6 +9637,13 @@ mod gen_U2fClientData;
 #[allow(unused_imports)]
 pub use gen_U2fClientData::*;
 
+#[cfg(feature = "ULongRange")]
+#[allow(non_snake_case)]
+mod gen_ULongRange;
+#[cfg(feature = "ULongRange")]
+#[allow(unused_imports)]
+pub use gen_ULongRange::*;
+
 #[cfg(feature = "UdpMessageEventInit")]
 #[allow(non_snake_case)]
 mod gen_UdpMessageEventInit;
@@ -10084,6 +10112,13 @@ mod gen_VisibilityState;
 #[cfg(feature = "VisibilityState")]
 #[allow(unused_imports)]
 pub use gen_VisibilityState::*;
+
+#[cfg(feature = "VisualViewport")]
+#[allow(non_snake_case)]
+mod gen_VisualViewport;
+#[cfg(feature = "VisualViewport")]
+#[allow(unused_imports)]
+pub use gen_VisualViewport::*;
 
 #[cfg(feature = "VoidCallback")]
 #[allow(non_snake_case)]
