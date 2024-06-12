@@ -8,6 +8,9 @@
 * Implement `From<NonNull<T>>` for `JsValue`.
   [#3877](https://github.com/rustwasm/wasm-bindgen/pull/3877)
 
+* Add bindings for `queueMicrotask`.
+  [#3981](https://github.com/rustwasm/wasm-bindgen/pull/3981)
+
 ### Changed
 
 * Generate JS bindings for WebIDL dictionary setters instead of using `Reflect`. This increases the size of the Web API bindings but should be more performant. Also, importing getters/setters from JS now supports specifying the JS attribute name as a string, e.g. `#[wasm_bindgen(method, setter = "x-cdm-codecs")]`.
