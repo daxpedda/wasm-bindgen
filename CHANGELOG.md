@@ -33,6 +33,9 @@
 * Fix missing target features in module when enabling reference types or multi-value transformation.
   [#3967](https://github.com/rustwasm/wasm-bindgen/pull/3967)
 
+* Fix triggering `clippy::mem_forget` lint in exported structs.
+  [#3985](https://github.com/rustwasm/wasm-bindgen/pull/3985)
+
 --------------------------------------------------------------------------------
 
 ## [0.2.92](https://github.com/rustwasm/wasm-bindgen/compare/0.2.91...0.2.92)
