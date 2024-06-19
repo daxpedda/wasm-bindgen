@@ -39,6 +39,9 @@
 * Add bindings for `FocusOptions`.
   [#3996](https://github.com/rustwasm/wasm-bindgen/pull/3996)
 
+* Generate getters for all WebIDL dictionary types.
+  [#3993](https://github.com/rustwasm/wasm-bindgen/pull/3993)
+
 ### Changed
 
 * Stabilize Web Share API.
