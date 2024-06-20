@@ -23,6 +23,9 @@
 * Generate getters for all WebIDL dictionary types.
   [#3993](https://github.com/rustwasm/wasm-bindgen/pull/3993)
 
+* Added `thread_stack_size` property to parameter of `default` (`init`) and `initSync` making it possible to set the stack size of spawned threads.
+  [#3995](https://github.com/rustwasm/wasm-bindgen/pull/3995)
+
 ### Changed
 
 * Stabilize Web Share API.
@@ -36,6 +39,12 @@
 
 * Deprecate builder-pattern type setters for WebIDL dictionary types and introduce non-mutable setters instead.
   [#3993](https://github.com/rustwasm/wasm-bindgen/pull/3993)
+
+* Increase default stack size for spawned threads from 1 to 2 MB.
+  [#3995](https://github.com/rustwasm/wasm-bindgen/pull/3995)
+
+* Deprecated parameters to `default` (`init`) and `initSync` in favor of an object.
+  [#3995](https://github.com/rustwasm/wasm-bindgen/pull/3995)
 
 ### Fixed
 
