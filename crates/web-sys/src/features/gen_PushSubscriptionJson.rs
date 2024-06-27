@@ -14,7 +14,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `PushSubscriptionJson`*"]
     #[wasm_bindgen(method, getter = "endpoint")]
-    pub fn get_endpoint(this: &PushSubscriptionJson) -> Option<String>;
+    pub fn get_endpoint(this: &PushSubscriptionJson) -> String;
     #[doc = "Change the `endpoint` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `PushSubscriptionJson`*"]
@@ -25,7 +25,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `PushSubscriptionJson`, `PushSubscriptionKeys`*"]
     #[wasm_bindgen(method, getter = "keys")]
-    pub fn get_keys(this: &PushSubscriptionJson) -> Option<PushSubscriptionKeys>;
+    pub fn get_keys(this: &PushSubscriptionJson) -> PushSubscriptionKeys;
     #[cfg(feature = "PushSubscriptionKeys")]
     #[doc = "Change the `keys` field of this object."]
     #[doc = ""]
@@ -37,6 +37,7 @@ impl PushSubscriptionJson {
     #[doc = "Construct a new `PushSubscriptionJson`."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `PushSubscriptionJson`*"]
+    #[deprecated]
     pub fn new() -> Self {
         #[allow(unused_mut)]
         let mut ret: Self = ::wasm_bindgen::JsCast::unchecked_into(::js_sys::Object::new());

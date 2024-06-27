@@ -14,7 +14,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ComputedEffectTiming`*"]
     #[wasm_bindgen(method, getter = "delay")]
-    pub fn get_delay(this: &ComputedEffectTiming) -> Option<f64>;
+    pub fn get_delay(this: &ComputedEffectTiming) -> f64;
     #[doc = "Change the `delay` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ComputedEffectTiming`*"]
@@ -25,7 +25,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ComputedEffectTiming`, `PlaybackDirection`*"]
     #[wasm_bindgen(method, getter = "direction")]
-    pub fn get_direction(this: &ComputedEffectTiming) -> Option<PlaybackDirection>;
+    pub fn get_direction(this: &ComputedEffectTiming) -> PlaybackDirection;
     #[cfg(feature = "PlaybackDirection")]
     #[doc = "Change the `direction` field of this object."]
     #[doc = ""]
@@ -46,7 +46,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ComputedEffectTiming`*"]
     #[wasm_bindgen(method, getter = "easing")]
-    pub fn get_easing(this: &ComputedEffectTiming) -> Option<String>;
+    pub fn get_easing(this: &ComputedEffectTiming) -> String;
     #[doc = "Change the `easing` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ComputedEffectTiming`*"]
@@ -56,7 +56,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ComputedEffectTiming`*"]
     #[wasm_bindgen(method, getter = "endDelay")]
-    pub fn get_end_delay(this: &ComputedEffectTiming) -> Option<f64>;
+    pub fn get_end_delay(this: &ComputedEffectTiming) -> f64;
     #[doc = "Change the `endDelay` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ComputedEffectTiming`*"]
@@ -67,7 +67,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ComputedEffectTiming`, `FillMode`*"]
     #[wasm_bindgen(method, getter = "fill")]
-    pub fn get_fill(this: &ComputedEffectTiming) -> Option<FillMode>;
+    pub fn get_fill(this: &ComputedEffectTiming) -> FillMode;
     #[cfg(feature = "FillMode")]
     #[doc = "Change the `fill` field of this object."]
     #[doc = ""]
@@ -78,7 +78,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ComputedEffectTiming`*"]
     #[wasm_bindgen(method, getter = "iterationStart")]
-    pub fn get_iteration_start(this: &ComputedEffectTiming) -> Option<f64>;
+    pub fn get_iteration_start(this: &ComputedEffectTiming) -> f64;
     #[doc = "Change the `iterationStart` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ComputedEffectTiming`*"]
@@ -88,7 +88,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ComputedEffectTiming`*"]
     #[wasm_bindgen(method, getter = "iterations")]
-    pub fn get_iterations(this: &ComputedEffectTiming) -> Option<f64>;
+    pub fn get_iterations(this: &ComputedEffectTiming) -> f64;
     #[doc = "Change the `iterations` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ComputedEffectTiming`*"]
@@ -98,7 +98,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ComputedEffectTiming`*"]
     #[wasm_bindgen(method, getter = "activeDuration")]
-    pub fn get_active_duration(this: &ComputedEffectTiming) -> Option<f64>;
+    pub fn get_active_duration(this: &ComputedEffectTiming) -> f64;
     #[doc = "Change the `activeDuration` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ComputedEffectTiming`*"]
@@ -118,7 +118,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ComputedEffectTiming`*"]
     #[wasm_bindgen(method, getter = "endTime")]
-    pub fn get_end_time(this: &ComputedEffectTiming) -> Option<f64>;
+    pub fn get_end_time(this: &ComputedEffectTiming) -> f64;
     #[doc = "Change the `endTime` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ComputedEffectTiming`*"]
@@ -149,6 +149,7 @@ impl ComputedEffectTiming {
     #[doc = "Construct a new `ComputedEffectTiming`."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ComputedEffectTiming`*"]
+    #[deprecated]
     pub fn new() -> Self {
         #[allow(unused_mut)]
         let mut ret: Self = ::wasm_bindgen::JsCast::unchecked_into(::js_sys::Object::new());

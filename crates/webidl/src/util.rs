@@ -628,6 +628,13 @@ pub fn get_rust_deprecated<'a>(ext_attrs: &Option<ExtendedAttributeList<'a>>) ->
         .map(|s| s.0)
 }
 
+pub fn is_rust_returned_dictionary(attrs: &Option<ExtendedAttributeList<'_>>) -> bool {
+    let Some(attrs) = attrs else { return false };
+    attrs.body.list.iter().any(
+        |attr| matches!(attr, ExtendedAttribute::NoArgs(id) if id.0 .0 == "RustReturnedDictionary"),
+    )
+}
+
 /// Whether a webidl object is marked as structural.
 pub fn is_structural(
     item_attrs: Option<&ExtendedAttributeList>,

@@ -21,6 +21,7 @@ dictionary MediaKeySystemMediaCapability {
    DOMString robustness = "";
 };
 
+[RustReturnedDictionary]
 dictionary MediaKeySystemConfiguration {
   DOMString                               label = "";
   sequence<DOMString>                     initDataTypes = [];

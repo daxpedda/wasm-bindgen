@@ -15,7 +15,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `DomPoint`, `DomQuadJson`*"]
     #[wasm_bindgen(method, getter = "p1")]
-    pub fn get_p1(this: &DomQuadJson) -> Option<DomPoint>;
+    pub fn get_p1(this: &DomQuadJson) -> DomPoint;
     #[cfg(feature = "DomPoint")]
     #[doc = "Change the `p1` field of this object."]
     #[doc = ""]
@@ -27,7 +27,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `DomPoint`, `DomQuadJson`*"]
     #[wasm_bindgen(method, getter = "p2")]
-    pub fn get_p2(this: &DomQuadJson) -> Option<DomPoint>;
+    pub fn get_p2(this: &DomQuadJson) -> DomPoint;
     #[cfg(feature = "DomPoint")]
     #[doc = "Change the `p2` field of this object."]
     #[doc = ""]
@@ -39,7 +39,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `DomPoint`, `DomQuadJson`*"]
     #[wasm_bindgen(method, getter = "p3")]
-    pub fn get_p3(this: &DomQuadJson) -> Option<DomPoint>;
+    pub fn get_p3(this: &DomQuadJson) -> DomPoint;
     #[cfg(feature = "DomPoint")]
     #[doc = "Change the `p3` field of this object."]
     #[doc = ""]
@@ -51,7 +51,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `DomPoint`, `DomQuadJson`*"]
     #[wasm_bindgen(method, getter = "p4")]
-    pub fn get_p4(this: &DomQuadJson) -> Option<DomPoint>;
+    pub fn get_p4(this: &DomQuadJson) -> DomPoint;
     #[cfg(feature = "DomPoint")]
     #[doc = "Change the `p4` field of this object."]
     #[doc = ""]
@@ -63,6 +63,7 @@ impl DomQuadJson {
     #[doc = "Construct a new `DomQuadJson`."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `DomQuadJson`*"]
+    #[deprecated]
     pub fn new() -> Self {
         #[allow(unused_mut)]
         let mut ret: Self = ::wasm_bindgen::JsCast::unchecked_into(::js_sys::Object::new());

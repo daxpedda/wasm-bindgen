@@ -14,7 +14,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
     #[wasm_bindgen(method, getter = "aspectRatio")]
-    pub fn get_aspect_ratio(this: &MediaTrackSupportedConstraints) -> Option<bool>;
+    pub fn get_aspect_ratio(this: &MediaTrackSupportedConstraints) -> bool;
     #[doc = "Change the `aspectRatio` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
@@ -24,7 +24,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
     #[wasm_bindgen(method, getter = "autoGainControl")]
-    pub fn get_auto_gain_control(this: &MediaTrackSupportedConstraints) -> Option<bool>;
+    pub fn get_auto_gain_control(this: &MediaTrackSupportedConstraints) -> bool;
     #[doc = "Change the `autoGainControl` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
@@ -34,7 +34,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
     #[wasm_bindgen(method, getter = "channelCount")]
-    pub fn get_channel_count(this: &MediaTrackSupportedConstraints) -> Option<bool>;
+    pub fn get_channel_count(this: &MediaTrackSupportedConstraints) -> bool;
     #[doc = "Change the `channelCount` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
@@ -44,7 +44,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
     #[wasm_bindgen(method, getter = "deviceId")]
-    pub fn get_device_id(this: &MediaTrackSupportedConstraints) -> Option<bool>;
+    pub fn get_device_id(this: &MediaTrackSupportedConstraints) -> bool;
     #[doc = "Change the `deviceId` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
@@ -54,7 +54,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
     #[wasm_bindgen(method, getter = "echoCancellation")]
-    pub fn get_echo_cancellation(this: &MediaTrackSupportedConstraints) -> Option<bool>;
+    pub fn get_echo_cancellation(this: &MediaTrackSupportedConstraints) -> bool;
     #[doc = "Change the `echoCancellation` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
@@ -64,7 +64,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
     #[wasm_bindgen(method, getter = "facingMode")]
-    pub fn get_facing_mode(this: &MediaTrackSupportedConstraints) -> Option<bool>;
+    pub fn get_facing_mode(this: &MediaTrackSupportedConstraints) -> bool;
     #[doc = "Change the `facingMode` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
@@ -74,7 +74,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
     #[wasm_bindgen(method, getter = "frameRate")]
-    pub fn get_frame_rate(this: &MediaTrackSupportedConstraints) -> Option<bool>;
+    pub fn get_frame_rate(this: &MediaTrackSupportedConstraints) -> bool;
     #[doc = "Change the `frameRate` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
@@ -84,7 +84,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
     #[wasm_bindgen(method, getter = "groupId")]
-    pub fn get_group_id(this: &MediaTrackSupportedConstraints) -> Option<bool>;
+    pub fn get_group_id(this: &MediaTrackSupportedConstraints) -> bool;
     #[doc = "Change the `groupId` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
@@ -94,7 +94,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
     #[wasm_bindgen(method, getter = "height")]
-    pub fn get_height(this: &MediaTrackSupportedConstraints) -> Option<bool>;
+    pub fn get_height(this: &MediaTrackSupportedConstraints) -> bool;
     #[doc = "Change the `height` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
@@ -104,7 +104,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
     #[wasm_bindgen(method, getter = "latency")]
-    pub fn get_latency(this: &MediaTrackSupportedConstraints) -> Option<bool>;
+    pub fn get_latency(this: &MediaTrackSupportedConstraints) -> bool;
     #[doc = "Change the `latency` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
@@ -114,7 +114,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
     #[wasm_bindgen(method, getter = "noiseSuppression")]
-    pub fn get_noise_suppression(this: &MediaTrackSupportedConstraints) -> Option<bool>;
+    pub fn get_noise_suppression(this: &MediaTrackSupportedConstraints) -> bool;
     #[doc = "Change the `noiseSuppression` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
@@ -124,7 +124,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
     #[wasm_bindgen(method, getter = "sampleRate")]
-    pub fn get_sample_rate(this: &MediaTrackSupportedConstraints) -> Option<bool>;
+    pub fn get_sample_rate(this: &MediaTrackSupportedConstraints) -> bool;
     #[doc = "Change the `sampleRate` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
@@ -134,7 +134,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
     #[wasm_bindgen(method, getter = "sampleSize")]
-    pub fn get_sample_size(this: &MediaTrackSupportedConstraints) -> Option<bool>;
+    pub fn get_sample_size(this: &MediaTrackSupportedConstraints) -> bool;
     #[doc = "Change the `sampleSize` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
@@ -144,7 +144,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
     #[wasm_bindgen(method, getter = "volume")]
-    pub fn get_volume(this: &MediaTrackSupportedConstraints) -> Option<bool>;
+    pub fn get_volume(this: &MediaTrackSupportedConstraints) -> bool;
     #[doc = "Change the `volume` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
@@ -154,7 +154,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
     #[wasm_bindgen(method, getter = "width")]
-    pub fn get_width(this: &MediaTrackSupportedConstraints) -> Option<bool>;
+    pub fn get_width(this: &MediaTrackSupportedConstraints) -> bool;
     #[doc = "Change the `width` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
@@ -165,6 +165,7 @@ impl MediaTrackSupportedConstraints {
     #[doc = "Construct a new `MediaTrackSupportedConstraints`."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSupportedConstraints`*"]
+    #[deprecated]
     pub fn new() -> Self {
         #[allow(unused_mut)]
         let mut ret: Self = ::wasm_bindgen::JsCast::unchecked_into(::js_sys::Object::new());

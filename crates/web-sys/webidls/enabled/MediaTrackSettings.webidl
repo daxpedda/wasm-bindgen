@@ -7,6 +7,7 @@
  * http://w3c.github.io/mediacapture-main/getusermedia.html
  */
 
+[RustReturnedDictionary]
 dictionary MediaTrackSettings {
     long      width;
     long      height;

@@ -17,6 +17,7 @@ dictionary DoubleRange {
   double min;
 };
 
+[RustReturnedDictionary]
 dictionary MediaTrackCapabilities {
   ULongRange width;
   ULongRange height;

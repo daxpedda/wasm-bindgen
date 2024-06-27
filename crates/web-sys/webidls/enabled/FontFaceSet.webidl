@@ -11,6 +11,7 @@
  */
 
 // To implement FontFaceSet's iterator until we can use setlike.
+[RustReturnedDictionary]
 dictionary FontFaceSetIteratorResult
 {
   required any value;

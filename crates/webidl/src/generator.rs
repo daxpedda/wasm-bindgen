@@ -6,11 +6,14 @@ use std::collections::BTreeSet;
 use syn::{Ident, Type};
 use wasm_bindgen_backend::util::leading_colon_path_ty;
 use wasm_bindgen_backend::util::{raw_ident, rust_ident};
+use weedle::attribute::ExtendedAttributeList;
 
-use crate::constants::{BUILTIN_IDENTS, POLYFILL_INTERFACES};
+use crate::constants::{BREAKING_CONSTRUCTOR, BUILTIN_IDENTS, POLYFILL_INTERFACES};
 use crate::traverse::TraverseType;
-use crate::util::shared_ref;
-use crate::util::{get_cfg_features, mdn_doc, required_doc_string, snake_case_ident};
+use crate::util::{
+    get_cfg_features, is_rust_returned_dictionary, mdn_doc, required_doc_string, shared_ref,
+    snake_case_ident,
+};
 use crate::Options;
 
 fn add_features(features: &mut BTreeSet<String>, ty: &impl TraverseType) {
@@ -746,16 +749,18 @@ impl DictionaryField {
     }
 }
 
-pub struct Dictionary {
+pub struct Dictionary<'a> {
+    pub attributes: &'a Option<ExtendedAttributeList<'a>>,
     pub name: Ident,
     pub js_name: String,
     pub fields: Vec<DictionaryField>,
     pub unstable: bool,
 }
 
-impl Dictionary {
+impl Dictionary<'_> {
     pub fn generate(&self, options: &Options) -> TokenStream {
         let Dictionary {
+            attributes,
             name,
             js_name,
             fields,
@@ -765,7 +770,7 @@ impl Dictionary {
         let unstable_attr = maybe_unstable_attr(*unstable);
         let unstable_docs = maybe_unstable_docs(*unstable);
 
-        let js_name = raw_ident(js_name);
+        let js_name_ident = raw_ident(js_name);
 
         let mut required_features = BTreeSet::new();
         let mut required_args = vec![];
@@ -816,6 +821,33 @@ impl Dictionary {
             .map(|(field, cfg_features)| field.generate_rust_setter(cfg_features))
             .collect::<Vec<_>>();
 
+        let has_constructor = if is_rust_returned_dictionary(attributes) {
+            if BREAKING_CONSTRUCTOR.contains(js_name.as_str()) {
+                Some(quote! { #[deprecated] })
+            } else {
+                None
+            }
+        } else {
+            Some(quote! {})
+        };
+
+        let constructor = if let Some(deprecated) = &has_constructor {
+            quote! {
+                #cfg_features
+                #ctor_doc_comment
+                #unstable_docs
+                #deprecated
+                pub fn new(#(#required_args),*) -> Self {
+                    #[allow(unused_mut)]
+                    let mut ret: Self = ::wasm_bindgen::JsCast::unchecked_into(::js_sys::Object::new());
+                    #(#required_calls)*
+                    ret
+                }
+            }
+        } else {
+            quote! {}
+        };
+
         let mut base_stream = quote! {
             #![allow(unused_imports)]
             #![allow(clippy::all)]
@@ -825,7 +857,7 @@ impl Dictionary {
             #unstable_attr
             #[wasm_bindgen]
             extern "C" {
-                #[wasm_bindgen(extends = ::js_sys::Object, js_name = #js_name)]
+                #[wasm_bindgen(extends = ::js_sys::Object, js_name = #js_name_ident)]
                 #[derive(Debug, Clone, PartialEq, Eq)]
                 #doc_comment
                 #unstable_docs
@@ -836,21 +868,13 @@ impl Dictionary {
 
             #unstable_attr
             impl #name {
-                #cfg_features
-                #ctor_doc_comment
-                #unstable_docs
-                pub fn new(#(#required_args),*) -> Self {
-                    #[allow(unused_mut)]
-                    let mut ret: Self = ::wasm_bindgen::JsCast::unchecked_into(::js_sys::Object::new());
-                    #(#required_calls)*
-                    ret
-                }
+                #constructor
 
                 #(#fields)*
             }
         };
 
-        if required_args.is_empty() {
+        if has_constructor.is_some() && required_args.is_empty() {
             let default_impl = quote! {
                 #unstable_attr
                 impl Default for #name {

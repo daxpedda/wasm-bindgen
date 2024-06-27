@@ -7,6 +7,7 @@
  * http://dev.w3.org/2011/webrtc/editor/getusermedia.html
  */
 
+[RustReturnedDictionary]
 dictionary MediaTrackSupportedConstraints {
     boolean width = true;
     boolean height = true;

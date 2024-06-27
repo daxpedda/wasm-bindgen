@@ -41,6 +41,7 @@ interface SerialPort : EventTarget {
   Promise<undefined> forget();
 };
 
+[RustReturnedDictionary]
 dictionary SerialPortInfo {
   unsigned short usbVendorId;
   unsigned short usbProductId;

@@ -1,6 +1,7 @@
 use once_cell::sync::Lazy;
 use std::collections::BTreeMap;
 use std::collections::BTreeSet;
+use std::collections::HashSet;
 use std::iter::FromIterator;
 
 pub(crate) static BUILTIN_IDENTS: Lazy<BTreeSet<&'static str>> = Lazy::new(|| {
@@ -707,3 +708,16 @@ pub(crate) static BREAKING_SETTER_THROWS: Lazy<BTreeMap<&'static str, Vec<&'stat
             ),
         ])
     });
+
+pub(crate) static BREAKING_CONSTRUCTOR: Lazy<HashSet<&'static str>> = Lazy::new(|| {
+    HashSet::from_iter([
+        "ComputedEffectTiming",
+        "DOMQuadJSON",
+        "EffectTiming",
+        "FontFaceSetIteratorResult",
+        "MediaKeySystemConfiguration",
+        "MediaTrackSettings",
+        "MediaTrackSupportedConstraints",
+        "PushSubscriptionJSON",
+    ])
+});

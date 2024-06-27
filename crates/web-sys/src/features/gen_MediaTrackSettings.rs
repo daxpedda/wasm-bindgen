@@ -14,7 +14,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSettings`*"]
     #[wasm_bindgen(method, getter = "autoGainControl")]
-    pub fn get_auto_gain_control(this: &MediaTrackSettings) -> Option<bool>;
+    pub fn get_auto_gain_control(this: &MediaTrackSettings) -> bool;
     #[doc = "Change the `autoGainControl` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSettings`*"]
@@ -24,7 +24,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSettings`*"]
     #[wasm_bindgen(method, getter = "channelCount")]
-    pub fn get_channel_count(this: &MediaTrackSettings) -> Option<i32>;
+    pub fn get_channel_count(this: &MediaTrackSettings) -> i32;
     #[doc = "Change the `channelCount` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSettings`*"]
@@ -34,7 +34,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSettings`*"]
     #[wasm_bindgen(method, getter = "deviceId")]
-    pub fn get_device_id(this: &MediaTrackSettings) -> Option<String>;
+    pub fn get_device_id(this: &MediaTrackSettings) -> String;
     #[doc = "Change the `deviceId` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSettings`*"]
@@ -44,7 +44,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSettings`*"]
     #[wasm_bindgen(method, getter = "echoCancellation")]
-    pub fn get_echo_cancellation(this: &MediaTrackSettings) -> Option<bool>;
+    pub fn get_echo_cancellation(this: &MediaTrackSettings) -> bool;
     #[doc = "Change the `echoCancellation` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSettings`*"]
@@ -54,7 +54,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSettings`*"]
     #[wasm_bindgen(method, getter = "facingMode")]
-    pub fn get_facing_mode(this: &MediaTrackSettings) -> Option<String>;
+    pub fn get_facing_mode(this: &MediaTrackSettings) -> String;
     #[doc = "Change the `facingMode` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSettings`*"]
@@ -64,7 +64,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSettings`*"]
     #[wasm_bindgen(method, getter = "frameRate")]
-    pub fn get_frame_rate(this: &MediaTrackSettings) -> Option<f64>;
+    pub fn get_frame_rate(this: &MediaTrackSettings) -> f64;
     #[doc = "Change the `frameRate` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSettings`*"]
@@ -74,7 +74,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSettings`*"]
     #[wasm_bindgen(method, getter = "height")]
-    pub fn get_height(this: &MediaTrackSettings) -> Option<i32>;
+    pub fn get_height(this: &MediaTrackSettings) -> i32;
     #[doc = "Change the `height` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSettings`*"]
@@ -84,7 +84,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSettings`*"]
     #[wasm_bindgen(method, getter = "noiseSuppression")]
-    pub fn get_noise_suppression(this: &MediaTrackSettings) -> Option<bool>;
+    pub fn get_noise_suppression(this: &MediaTrackSettings) -> bool;
     #[doc = "Change the `noiseSuppression` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSettings`*"]
@@ -94,7 +94,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSettings`*"]
     #[wasm_bindgen(method, getter = "width")]
-    pub fn get_width(this: &MediaTrackSettings) -> Option<i32>;
+    pub fn get_width(this: &MediaTrackSettings) -> i32;
     #[doc = "Change the `width` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSettings`*"]
@@ -105,6 +105,7 @@ impl MediaTrackSettings {
     #[doc = "Construct a new `MediaTrackSettings`."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackSettings`*"]
+    #[deprecated]
     pub fn new() -> Self {
         #[allow(unused_mut)]
         let mut ret: Self = ::wasm_bindgen::JsCast::unchecked_into(::js_sys::Object::new());

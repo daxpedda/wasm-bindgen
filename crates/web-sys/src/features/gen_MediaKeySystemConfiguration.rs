@@ -14,7 +14,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaKeySystemConfiguration`*"]
     #[wasm_bindgen(method, getter = "audioCapabilities")]
-    pub fn get_audio_capabilities(this: &MediaKeySystemConfiguration) -> Option<::js_sys::Array>;
+    pub fn get_audio_capabilities(this: &MediaKeySystemConfiguration) -> ::js_sys::Array;
     #[doc = "Change the `audioCapabilities` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaKeySystemConfiguration`*"]
@@ -28,9 +28,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaKeySystemConfiguration`, `MediaKeysRequirement`*"]
     #[wasm_bindgen(method, getter = "distinctiveIdentifier")]
-    pub fn get_distinctive_identifier(
-        this: &MediaKeySystemConfiguration,
-    ) -> Option<MediaKeysRequirement>;
+    pub fn get_distinctive_identifier(this: &MediaKeySystemConfiguration) -> MediaKeysRequirement;
     #[cfg(feature = "MediaKeysRequirement")]
     #[doc = "Change the `distinctiveIdentifier` field of this object."]
     #[doc = ""]
@@ -44,7 +42,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaKeySystemConfiguration`*"]
     #[wasm_bindgen(method, getter = "initDataTypes")]
-    pub fn get_init_data_types(this: &MediaKeySystemConfiguration) -> Option<::js_sys::Array>;
+    pub fn get_init_data_types(this: &MediaKeySystemConfiguration) -> ::js_sys::Array;
     #[doc = "Change the `initDataTypes` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaKeySystemConfiguration`*"]
@@ -54,7 +52,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaKeySystemConfiguration`*"]
     #[wasm_bindgen(method, getter = "label")]
-    pub fn get_label(this: &MediaKeySystemConfiguration) -> Option<String>;
+    pub fn get_label(this: &MediaKeySystemConfiguration) -> String;
     #[doc = "Change the `label` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaKeySystemConfiguration`*"]
@@ -65,8 +63,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaKeySystemConfiguration`, `MediaKeysRequirement`*"]
     #[wasm_bindgen(method, getter = "persistentState")]
-    pub fn get_persistent_state(this: &MediaKeySystemConfiguration)
-        -> Option<MediaKeysRequirement>;
+    pub fn get_persistent_state(this: &MediaKeySystemConfiguration) -> MediaKeysRequirement;
     #[cfg(feature = "MediaKeysRequirement")]
     #[doc = "Change the `persistentState` field of this object."]
     #[doc = ""]
@@ -77,7 +74,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaKeySystemConfiguration`*"]
     #[wasm_bindgen(method, getter = "sessionTypes")]
-    pub fn get_session_types(this: &MediaKeySystemConfiguration) -> Option<::js_sys::Array>;
+    pub fn get_session_types(this: &MediaKeySystemConfiguration) -> ::js_sys::Array;
     #[doc = "Change the `sessionTypes` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaKeySystemConfiguration`*"]
@@ -87,7 +84,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaKeySystemConfiguration`*"]
     #[wasm_bindgen(method, getter = "videoCapabilities")]
-    pub fn get_video_capabilities(this: &MediaKeySystemConfiguration) -> Option<::js_sys::Array>;
+    pub fn get_video_capabilities(this: &MediaKeySystemConfiguration) -> ::js_sys::Array;
     #[doc = "Change the `videoCapabilities` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaKeySystemConfiguration`*"]
@@ -101,6 +98,7 @@ impl MediaKeySystemConfiguration {
     #[doc = "Construct a new `MediaKeySystemConfiguration`."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaKeySystemConfiguration`*"]
+    #[deprecated]
     pub fn new() -> Self {
         #[allow(unused_mut)]
         let mut ret: Self = ::wasm_bindgen::JsCast::unchecked_into(::js_sys::Object::new());

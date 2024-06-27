@@ -22,6 +22,7 @@ dictionary PushSubscriptionKeys
   ByteString auth;
 };
 
+[RustReturnedDictionary]
 dictionary PushSubscriptionJSON
 {
   USVString endpoint;

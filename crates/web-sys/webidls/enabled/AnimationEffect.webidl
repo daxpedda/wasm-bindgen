@@ -25,6 +25,7 @@ enum PlaybackDirection {
   "alternate-reverse"
 };
 
+[RustReturnedDictionary]
 dictionary EffectTiming {
   double                              delay = 0.0;
   double                              endDelay = 0.0;
@@ -47,6 +48,7 @@ dictionary OptionalEffectTiming {
   DOMString                           easing;
 };
 
+[RustReturnedDictionary]
 dictionary ComputedEffectTiming : EffectTiming {
   unrestricted double   endTime = 0.0;
   unrestricted double   activeDuration = 0.0;

@@ -26,6 +26,7 @@ interface DOMQuad {
     DOMQuadJSON toJSON();
 };
 
+[RustReturnedDictionary]
 dictionary DOMQuadJSON {
     DOMPoint p1;
     DOMPoint p2;

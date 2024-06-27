@@ -23,7 +23,7 @@ extern "C" {
     #[doc = "*This API is unstable and requires `--cfg=web_sys_unstable_apis` to be activated, as"]
     #[doc = "[described in the `wasm-bindgen` guide](https://rustwasm.github.io/docs/wasm-bindgen/web-sys/unstable-apis.html)*"]
     #[wasm_bindgen(method, getter = "aspectRatio")]
-    pub fn get_aspect_ratio(this: &MediaTrackCapabilities) -> Option<DoubleRange>;
+    pub fn get_aspect_ratio(this: &MediaTrackCapabilities) -> DoubleRange;
     #[cfg(web_sys_unstable_apis)]
     #[cfg(feature = "DoubleRange")]
     #[doc = "Change the `aspectRatio` field of this object."]
@@ -42,7 +42,7 @@ extern "C" {
     #[doc = "*This API is unstable and requires `--cfg=web_sys_unstable_apis` to be activated, as"]
     #[doc = "[described in the `wasm-bindgen` guide](https://rustwasm.github.io/docs/wasm-bindgen/web-sys/unstable-apis.html)*"]
     #[wasm_bindgen(method, getter = "autoGainControl")]
-    pub fn get_auto_gain_control(this: &MediaTrackCapabilities) -> Option<::js_sys::Array>;
+    pub fn get_auto_gain_control(this: &MediaTrackCapabilities) -> ::js_sys::Array;
     #[cfg(web_sys_unstable_apis)]
     #[doc = "Change the `autoGainControl` field of this object."]
     #[doc = ""]
@@ -61,7 +61,7 @@ extern "C" {
     #[doc = "*This API is unstable and requires `--cfg=web_sys_unstable_apis` to be activated, as"]
     #[doc = "[described in the `wasm-bindgen` guide](https://rustwasm.github.io/docs/wasm-bindgen/web-sys/unstable-apis.html)*"]
     #[wasm_bindgen(method, getter = "channelCount")]
-    pub fn get_channel_count(this: &MediaTrackCapabilities) -> Option<ULongRange>;
+    pub fn get_channel_count(this: &MediaTrackCapabilities) -> ULongRange;
     #[cfg(web_sys_unstable_apis)]
     #[cfg(feature = "ULongRange")]
     #[doc = "Change the `channelCount` field of this object."]
@@ -80,7 +80,7 @@ extern "C" {
     #[doc = "*This API is unstable and requires `--cfg=web_sys_unstable_apis` to be activated, as"]
     #[doc = "[described in the `wasm-bindgen` guide](https://rustwasm.github.io/docs/wasm-bindgen/web-sys/unstable-apis.html)*"]
     #[wasm_bindgen(method, getter = "deviceId")]
-    pub fn get_device_id(this: &MediaTrackCapabilities) -> Option<String>;
+    pub fn get_device_id(this: &MediaTrackCapabilities) -> String;
     #[cfg(web_sys_unstable_apis)]
     #[doc = "Change the `deviceId` field of this object."]
     #[doc = ""]
@@ -98,7 +98,7 @@ extern "C" {
     #[doc = "*This API is unstable and requires `--cfg=web_sys_unstable_apis` to be activated, as"]
     #[doc = "[described in the `wasm-bindgen` guide](https://rustwasm.github.io/docs/wasm-bindgen/web-sys/unstable-apis.html)*"]
     #[wasm_bindgen(method, getter = "echoCancellation")]
-    pub fn get_echo_cancellation(this: &MediaTrackCapabilities) -> Option<::js_sys::Array>;
+    pub fn get_echo_cancellation(this: &MediaTrackCapabilities) -> ::js_sys::Array;
     #[cfg(web_sys_unstable_apis)]
     #[doc = "Change the `echoCancellation` field of this object."]
     #[doc = ""]
@@ -116,7 +116,7 @@ extern "C" {
     #[doc = "*This API is unstable and requires `--cfg=web_sys_unstable_apis` to be activated, as"]
     #[doc = "[described in the `wasm-bindgen` guide](https://rustwasm.github.io/docs/wasm-bindgen/web-sys/unstable-apis.html)*"]
     #[wasm_bindgen(method, getter = "facingMode")]
-    pub fn get_facing_mode(this: &MediaTrackCapabilities) -> Option<::js_sys::Array>;
+    pub fn get_facing_mode(this: &MediaTrackCapabilities) -> ::js_sys::Array;
     #[cfg(web_sys_unstable_apis)]
     #[doc = "Change the `facingMode` field of this object."]
     #[doc = ""]
@@ -135,7 +135,7 @@ extern "C" {
     #[doc = "*This API is unstable and requires `--cfg=web_sys_unstable_apis` to be activated, as"]
     #[doc = "[described in the `wasm-bindgen` guide](https://rustwasm.github.io/docs/wasm-bindgen/web-sys/unstable-apis.html)*"]
     #[wasm_bindgen(method, getter = "frameRate")]
-    pub fn get_frame_rate(this: &MediaTrackCapabilities) -> Option<DoubleRange>;
+    pub fn get_frame_rate(this: &MediaTrackCapabilities) -> DoubleRange;
     #[cfg(web_sys_unstable_apis)]
     #[cfg(feature = "DoubleRange")]
     #[doc = "Change the `frameRate` field of this object."]
@@ -154,7 +154,7 @@ extern "C" {
     #[doc = "*This API is unstable and requires `--cfg=web_sys_unstable_apis` to be activated, as"]
     #[doc = "[described in the `wasm-bindgen` guide](https://rustwasm.github.io/docs/wasm-bindgen/web-sys/unstable-apis.html)*"]
     #[wasm_bindgen(method, getter = "groupId")]
-    pub fn get_group_id(this: &MediaTrackCapabilities) -> Option<String>;
+    pub fn get_group_id(this: &MediaTrackCapabilities) -> String;
     #[cfg(web_sys_unstable_apis)]
     #[doc = "Change the `groupId` field of this object."]
     #[doc = ""]
@@ -173,7 +173,7 @@ extern "C" {
     #[doc = "*This API is unstable and requires `--cfg=web_sys_unstable_apis` to be activated, as"]
     #[doc = "[described in the `wasm-bindgen` guide](https://rustwasm.github.io/docs/wasm-bindgen/web-sys/unstable-apis.html)*"]
     #[wasm_bindgen(method, getter = "height")]
-    pub fn get_height(this: &MediaTrackCapabilities) -> Option<ULongRange>;
+    pub fn get_height(this: &MediaTrackCapabilities) -> ULongRange;
     #[cfg(web_sys_unstable_apis)]
     #[cfg(feature = "ULongRange")]
     #[doc = "Change the `height` field of this object."]
@@ -193,7 +193,7 @@ extern "C" {
     #[doc = "*This API is unstable and requires `--cfg=web_sys_unstable_apis` to be activated, as"]
     #[doc = "[described in the `wasm-bindgen` guide](https://rustwasm.github.io/docs/wasm-bindgen/web-sys/unstable-apis.html)*"]
     #[wasm_bindgen(method, getter = "latency")]
-    pub fn get_latency(this: &MediaTrackCapabilities) -> Option<DoubleRange>;
+    pub fn get_latency(this: &MediaTrackCapabilities) -> DoubleRange;
     #[cfg(web_sys_unstable_apis)]
     #[cfg(feature = "DoubleRange")]
     #[doc = "Change the `latency` field of this object."]
@@ -212,7 +212,7 @@ extern "C" {
     #[doc = "*This API is unstable and requires `--cfg=web_sys_unstable_apis` to be activated, as"]
     #[doc = "[described in the `wasm-bindgen` guide](https://rustwasm.github.io/docs/wasm-bindgen/web-sys/unstable-apis.html)*"]
     #[wasm_bindgen(method, getter = "noiseSuppression")]
-    pub fn get_noise_suppression(this: &MediaTrackCapabilities) -> Option<::js_sys::Array>;
+    pub fn get_noise_suppression(this: &MediaTrackCapabilities) -> ::js_sys::Array;
     #[cfg(web_sys_unstable_apis)]
     #[doc = "Change the `noiseSuppression` field of this object."]
     #[doc = ""]
@@ -230,7 +230,7 @@ extern "C" {
     #[doc = "*This API is unstable and requires `--cfg=web_sys_unstable_apis` to be activated, as"]
     #[doc = "[described in the `wasm-bindgen` guide](https://rustwasm.github.io/docs/wasm-bindgen/web-sys/unstable-apis.html)*"]
     #[wasm_bindgen(method, getter = "resizeMode")]
-    pub fn get_resize_mode(this: &MediaTrackCapabilities) -> Option<::js_sys::Array>;
+    pub fn get_resize_mode(this: &MediaTrackCapabilities) -> ::js_sys::Array;
     #[cfg(web_sys_unstable_apis)]
     #[doc = "Change the `resizeMode` field of this object."]
     #[doc = ""]
@@ -249,7 +249,7 @@ extern "C" {
     #[doc = "*This API is unstable and requires `--cfg=web_sys_unstable_apis` to be activated, as"]
     #[doc = "[described in the `wasm-bindgen` guide](https://rustwasm.github.io/docs/wasm-bindgen/web-sys/unstable-apis.html)*"]
     #[wasm_bindgen(method, getter = "sampleRate")]
-    pub fn get_sample_rate(this: &MediaTrackCapabilities) -> Option<ULongRange>;
+    pub fn get_sample_rate(this: &MediaTrackCapabilities) -> ULongRange;
     #[cfg(web_sys_unstable_apis)]
     #[cfg(feature = "ULongRange")]
     #[doc = "Change the `sampleRate` field of this object."]
@@ -269,7 +269,7 @@ extern "C" {
     #[doc = "*This API is unstable and requires `--cfg=web_sys_unstable_apis` to be activated, as"]
     #[doc = "[described in the `wasm-bindgen` guide](https://rustwasm.github.io/docs/wasm-bindgen/web-sys/unstable-apis.html)*"]
     #[wasm_bindgen(method, getter = "sampleSize")]
-    pub fn get_sample_size(this: &MediaTrackCapabilities) -> Option<ULongRange>;
+    pub fn get_sample_size(this: &MediaTrackCapabilities) -> ULongRange;
     #[cfg(web_sys_unstable_apis)]
     #[cfg(feature = "ULongRange")]
     #[doc = "Change the `sampleSize` field of this object."]
@@ -289,7 +289,7 @@ extern "C" {
     #[doc = "*This API is unstable and requires `--cfg=web_sys_unstable_apis` to be activated, as"]
     #[doc = "[described in the `wasm-bindgen` guide](https://rustwasm.github.io/docs/wasm-bindgen/web-sys/unstable-apis.html)*"]
     #[wasm_bindgen(method, getter = "width")]
-    pub fn get_width(this: &MediaTrackCapabilities) -> Option<ULongRange>;
+    pub fn get_width(this: &MediaTrackCapabilities) -> ULongRange;
     #[cfg(web_sys_unstable_apis)]
     #[cfg(feature = "ULongRange")]
     #[doc = "Change the `width` field of this object."]
@@ -303,17 +303,6 @@ extern "C" {
 }
 #[cfg(web_sys_unstable_apis)]
 impl MediaTrackCapabilities {
-    #[doc = "Construct a new `MediaTrackCapabilities`."]
-    #[doc = ""]
-    #[doc = "*This API requires the following crate features to be activated: `MediaTrackCapabilities`*"]
-    #[doc = ""]
-    #[doc = "*This API is unstable and requires `--cfg=web_sys_unstable_apis` to be activated, as"]
-    #[doc = "[described in the `wasm-bindgen` guide](https://rustwasm.github.io/docs/wasm-bindgen/web-sys/unstable-apis.html)*"]
-    pub fn new() -> Self {
-        #[allow(unused_mut)]
-        let mut ret: Self = ::wasm_bindgen::JsCast::unchecked_into(::js_sys::Object::new());
-        ret
-    }
     #[cfg(web_sys_unstable_apis)]
     #[cfg(feature = "DoubleRange")]
     #[deprecated = "Use `set_aspect_ratio()` instead."]
@@ -411,11 +400,5 @@ impl MediaTrackCapabilities {
     pub fn width(&mut self, val: &ULongRange) -> &mut Self {
         self.set_width(val);
         self
-    }
-}
-#[cfg(web_sys_unstable_apis)]
-impl Default for MediaTrackCapabilities {
-    fn default() -> Self {
-        Self::new()
     }
 }

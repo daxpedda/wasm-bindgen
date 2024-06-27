@@ -35,6 +35,7 @@ impl FontFaceSetIteratorResult {
     #[doc = "Construct a new `FontFaceSetIteratorResult`."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `FontFaceSetIteratorResult`*"]
+    #[deprecated]
     pub fn new(done: bool, value: &::wasm_bindgen::JsValue) -> Self {
         #[allow(unused_mut)]
         let mut ret: Self = ::wasm_bindgen::JsCast::unchecked_into(::js_sys::Object::new());

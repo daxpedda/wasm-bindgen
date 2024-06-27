@@ -25,8 +25,8 @@ use crate::generator::{
 use crate::idl_type::ToIdlType;
 use crate::traverse::TraverseType;
 use crate::util::{
-    camel_case_ident, getter_throws, is_structural, is_type_unstable, optional_return_ty, read_dir,
-    setter_throws, shouty_snake_case_ident, snake_case_ident, throws,
+    camel_case_ident, getter_throws, is_rust_returned_dictionary, is_structural, is_type_unstable,
+    optional_return_ty, read_dir, setter_throws, shouty_snake_case_ident, snake_case_ident, throws,
     webidl_const_v_to_backend_const_v, TypePosition,
 };
 use anyhow::Context;
@@ -298,11 +298,18 @@ impl<'src> FirstPassRecord<'src> {
 
         let mut fields = Vec::new();
 
-        if !self.append_dictionary_members(&js_name, &mut fields, unstable, unstable_types) {
+        if !self.append_dictionary_members(
+            &def.attributes,
+            &js_name,
+            &mut fields,
+            unstable,
+            unstable_types,
+        ) {
             return;
         }
 
         Dictionary {
+            attributes: &def.attributes,
             name,
             js_name,
             fields,
@@ -314,6 +321,7 @@ impl<'src> FirstPassRecord<'src> {
 
     fn append_dictionary_members(
         &self,
+        parent_attr: &Option<ExtendedAttributeList<'_>>,
         dict: &'src str,
         dst: &mut Vec<DictionaryField>,
         unstable: bool,
@@ -326,7 +334,13 @@ impl<'src> FirstPassRecord<'src> {
         // > such that inherited dictionary members are ordered before
         // > non-inherited members ...
         if let Some(parent) = &definition.inheritance {
-            if !self.append_dictionary_members(parent.identifier.0, dst, unstable, unstable_types) {
+            if !self.append_dictionary_members(
+                parent_attr,
+                parent.identifier.0,
+                dst,
+                unstable,
+                unstable_types,
+            ) {
                 return false;
             }
         }
@@ -345,7 +359,7 @@ impl<'src> FirstPassRecord<'src> {
                 .zip(iter::repeat(unstable || d.stability.is_unstable()))
         });
         for (member, unstable) in members.zip(iter::repeat(unstable)).chain(partials) {
-            match self.dictionary_field(member, unstable, unstable_types) {
+            match self.dictionary_field(parent_attr, member, unstable, unstable_types) {
                 Some(f) => dst.push(f),
                 None => {
                     log::warn!(
@@ -369,6 +383,7 @@ impl<'src> FirstPassRecord<'src> {
 
     fn dictionary_field(
         &self,
+        parent_attr: &Option<ExtendedAttributeList<'_>>,
         field: &'src DictionaryMember<'src>,
         unstable: bool,
         unstable_types: &HashSet<Identifier>,
@@ -399,7 +414,7 @@ impl<'src> FirstPassRecord<'src> {
 
         let mut return_ty = idl_type.to_syn_type(TypePosition::Return).unwrap().unwrap();
 
-        if field.required.is_none() {
+        if field.required.is_none() && !is_rust_returned_dictionary(parent_attr) {
             return_ty = optional_return_ty(return_ty);
         }
 
@@ -784,6 +799,15 @@ impl<'src> FirstPassRecord<'src> {
                     };
                     let pos = TypePosition::Argument;
 
+                    let mut return_ty = idl_type::IdlType::Callback
+                        .to_syn_type(TypePosition::Return)
+                        .unwrap()
+                        .unwrap();
+
+                    if !is_rust_returned_dictionary(&item.definition.attributes) {
+                        return_ty = optional_return_ty(return_ty);
+                    }
+
                     fields.push(DictionaryField {
                         required: false,
                         name: snake_case_ident(identifier),
@@ -792,12 +816,7 @@ impl<'src> FirstPassRecord<'src> {
                             .to_syn_type(pos)
                             .unwrap()
                             .unwrap(),
-                        return_ty: optional_return_ty(
-                            idl_type::IdlType::Callback
-                                .to_syn_type(TypePosition::Return)
-                                .unwrap()
-                                .unwrap(),
-                        ),
+                        return_ty,
                         is_js_value_ref_option_type: false,
                         unstable: false,
                     })
@@ -812,6 +831,7 @@ impl<'src> FirstPassRecord<'src> {
         }
 
         Dictionary {
+            attributes: &item.definition.attributes,
             name,
             js_name,
             fields,
