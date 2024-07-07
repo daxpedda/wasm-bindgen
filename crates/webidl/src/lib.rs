@@ -25,9 +25,10 @@ use crate::generator::{
 use crate::idl_type::ToIdlType;
 use crate::traverse::TraverseType;
 use crate::util::{
-    camel_case_ident, getter_throws, is_rust_returned_dictionary, is_structural, is_type_unstable,
-    optional_return_ty, read_dir, setter_throws, shouty_snake_case_ident, snake_case_ident, throws,
-    webidl_const_v_to_backend_const_v, TypePosition,
+    camel_case_ident, find_in_arguments, find_in_type, getter_throws, is_rust_returned_dictionary,
+    is_structural, is_type_unstable, optional_return_ty, read_dir, setter_throws,
+    shouty_snake_case_ident, snake_case_ident, throws, webidl_const_v_to_backend_const_v,
+    TypePosition,
 };
 use anyhow::Context;
 use anyhow::Result;
@@ -35,7 +36,7 @@ use idl_type::IdlType;
 use proc_macro2::{Ident, TokenStream};
 use quote::ToTokens;
 use sourcefile::SourceFile;
-use std::collections::{BTreeMap, BTreeSet, HashSet};
+use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet};
 use std::ffi::OsStr;
 use std::fs;
 use std::path::{Path, PathBuf};
@@ -46,7 +47,7 @@ use weedle::attribute::ExtendedAttributeList;
 use weedle::common::Identifier;
 use weedle::dictionary::DictionaryMember;
 use weedle::interface::InterfaceMember;
-use weedle::Parse;
+use weedle::{Definition, Parse};
 
 /// Options to configure the conversion process
 #[derive(Debug)]
@@ -130,18 +131,17 @@ fn parse(
 
     let unstable_definitions = parse_source(unstable_source)?;
 
+    test(&definitions, &unstable_definitions);
+
     // Gather unstable type Identifiers so that stable APIs can be downgraded
     // to unstable if they accept one of these types
     let unstable_types: HashSet<Identifier> = unstable_definitions
         .iter()
-        .flat_map(|definition| {
-            use weedle::Definition::*;
-            match definition {
-                Dictionary(v) => Some(v.identifier),
-                Enum(v) => Some(v.identifier),
-                Interface(v) => Some(v.identifier),
-                _ => None,
-            }
+        .flat_map(|definition| match definition {
+            Definition::Dictionary(v) => Some(v.identifier),
+            Definition::Enum(v) => Some(v.identifier),
+            Definition::Interface(v) => Some(v.identifier),
+            _ => None,
         })
         .collect();
 
@@ -196,6 +196,252 @@ fn parse(
     }
 
     Ok(types)
+}
+
+fn test(definitions: &[Definition], unstable_definitions: &[Definition]) {
+    use weedle::attribute::ExtendedAttribute;
+    use weedle::interface::{
+        AsyncIterableInterfaceMember, ConstructorInterfaceMember, DoubleTypedAsyncIterable,
+        IterableInterfaceMember, OperationInterfaceMember, SingleTypedAsyncIterable,
+        StringifierOrInheritOrStatic,
+    };
+    use weedle::mixin::MixinMember;
+    use weedle::namespace::NamespaceMember;
+    use weedle::types::ReturnType;
+    use weedle::{
+        InterfaceDefinition, InterfaceMixinDefinition, NamespaceDefinition,
+        PartialInterfaceDefinition, PartialInterfaceMixinDefinition, PartialNamespaceDefinition,
+    };
+
+    #[derive(Clone, Copy, Eq, Hash, PartialEq)]
+    enum Type<'a> {
+        Dictionary(Identifier<'a>),
+        Typedef(Identifier<'a>),
+    }
+
+    impl<'a> Type<'a> {
+        fn identifier(self) -> Identifier<'a> {
+            match self {
+                Type::Dictionary(identifier) | Type::Typedef(identifier) => identifier,
+            }
+        }
+    }
+
+    let mut types = HashMap::new();
+
+    for type_ in definitions
+        .iter()
+        .chain(unstable_definitions)
+        .filter_map(|definition| match definition {
+            Definition::Dictionary(dictionary) => Some(Type::Dictionary(dictionary.identifier)),
+            Definition::Typedef(typedef) => Some(Type::Typedef(typedef.identifier)),
+            _ => None,
+        })
+    {
+        let mut list = Vec::new();
+
+        if !definitions
+            .iter()
+            .chain(unstable_definitions)
+            .any(|definition| match definition {
+                Definition::Callback(callback) => {
+                    if let ReturnType::Type(return_type) = &callback.return_type {
+                        find_in_type(return_type, type_.identifier())
+                    } else {
+                        false
+                    }
+                }
+                Definition::Interface(InterfaceDefinition {
+                    attributes,
+                    members,
+                    ..
+                })
+                | Definition::PartialInterface(PartialInterfaceDefinition {
+                    attributes,
+                    members,
+                    ..
+                }) => {
+                    attributes
+                        .as_ref()
+                        .map(|attributes| {
+                            attributes
+                                .body
+                                .list
+                                .iter()
+                                .any(|attribute| match attribute {
+                                    ExtendedAttribute::ArgList(list) => {
+                                        find_in_arguments(&list.args, type_.identifier())
+                                    }
+                                    ExtendedAttribute::NamedArgList(list) => {
+                                        find_in_arguments(&list.args, type_.identifier())
+                                    }
+                                    _ => false,
+                                })
+                        })
+                        .unwrap_or(false)
+                        || members.body.iter().any(|member| match member {
+                            InterfaceMember::Attribute(attribute)
+                                if attribute.readonly.is_none()
+                                    && !matches!(
+                                        attribute.modifier,
+                                        Some(StringifierOrInheritOrStatic::Static(_))
+                                    ) =>
+                            {
+                                find_in_type(&attribute.type_.type_, type_.identifier())
+                            }
+                            InterfaceMember::Constructor(ConstructorInterfaceMember {
+                                args,
+                                ..
+                            })
+                            | InterfaceMember::Operation(OperationInterfaceMember {
+                                args, ..
+                            }) => find_in_arguments(args, type_.identifier()),
+                            InterfaceMember::Iterable(iterable) => match iterable {
+                                IterableInterfaceMember::Single(iterable) => {
+                                    find_in_type(&iterable.generics.body.type_, type_.identifier())
+                                }
+                                IterableInterfaceMember::Double(iterable) => {
+                                    find_in_type(
+                                        &iterable.generics.body.0.type_,
+                                        type_.identifier(),
+                                    ) | find_in_type(
+                                        &iterable.generics.body.2.type_,
+                                        type_.identifier(),
+                                    )
+                                }
+                            },
+                            InterfaceMember::AsyncIterable(iterable) => {
+                                (match iterable {
+                                    AsyncIterableInterfaceMember::Single(iterable) => find_in_type(
+                                        &iterable.generics.body.type_,
+                                        type_.identifier(),
+                                    ),
+                                    AsyncIterableInterfaceMember::Double(iterable) => {
+                                        find_in_type(
+                                            &iterable.generics.body.0.type_,
+                                            type_.identifier(),
+                                        ) || find_in_type(
+                                            &iterable.generics.body.2.type_,
+                                            type_.identifier(),
+                                        )
+                                    }
+                                }) || match iterable {
+                                    AsyncIterableInterfaceMember::Single(
+                                        SingleTypedAsyncIterable {
+                                            args: Some(args), ..
+                                        },
+                                    )
+                                    | AsyncIterableInterfaceMember::Double(
+                                        DoubleTypedAsyncIterable {
+                                            args: Some(args), ..
+                                        },
+                                    ) => find_in_arguments(args, type_.identifier()),
+                                    _ => false,
+                                }
+                            }
+                            InterfaceMember::Maplike(map) if map.readonly.is_none() => {
+                                find_in_type(&map.generics.body.0.type_, type_.identifier())
+                                    || find_in_type(&map.generics.body.2.type_, type_.identifier())
+                            }
+                            InterfaceMember::Setlike(set) if set.readonly.is_none() => {
+                                find_in_type(&set.generics.body.type_, type_.identifier())
+                            }
+                            _ => false,
+                        })
+                }
+                Definition::InterfaceMixin(InterfaceMixinDefinition { members, .. })
+                | Definition::PartialInterfaceMixin(PartialInterfaceMixinDefinition {
+                    members,
+                    ..
+                }) => members.body.iter().any(|member| match member {
+                    MixinMember::Operation(operation) => {
+                        find_in_arguments(&operation.args, type_.identifier())
+                    }
+                    MixinMember::Attribute(attribute) if attribute.readonly.is_none() => {
+                        find_in_type(&attribute.type_.type_, type_.identifier())
+                    }
+                    _ => false,
+                }),
+                Definition::Namespace(NamespaceDefinition { members, .. })
+                | Definition::PartialNamespace(PartialNamespaceDefinition { members, .. }) => {
+                    members.body.iter().any(|member| {
+                        if let NamespaceMember::Operation(operation) = member {
+                            find_in_arguments(&operation.args, type_.identifier())
+                        } else {
+                            false
+                        }
+                    })
+                }
+                Definition::Dictionary(dictionary) => {
+                    if let Some(inheritance) = dictionary.inheritance {
+                        if inheritance.identifier == type_.identifier() {
+                            list.push(dictionary.identifier);
+                        }
+                    }
+
+                    for member in &dictionary.members.body {
+                        if find_in_type(&member.type_, type_.identifier()) {
+                            list.push(dictionary.identifier);
+                        }
+                    }
+
+                    false
+                }
+                Definition::PartialDictionary(dictionary) => {
+                    for member in &dictionary.members.body {
+                        if find_in_type(&member.type_, type_.identifier()) {
+                            list.push(dictionary.identifier);
+                        }
+                    }
+
+                    false
+                }
+                Definition::Typedef(typedef) => {
+                    if find_in_type(&typedef.type_.type_, type_.identifier()) {
+                        list.push(typedef.identifier);
+                    }
+
+                    false
+                }
+                _ => false,
+            })
+        {
+            types.insert(type_, list);
+        }
+    }
+
+    let mut surviving_types: HashSet<_> = types.keys().map(|type_| type_.identifier()).collect();
+    let mut size = types.len() + 1;
+
+    while size != types.len() {
+        size = types.len();
+
+        types.retain(|type_, points| {
+            for point in points {
+                if !surviving_types.contains(point) {
+                    surviving_types.remove(&type_.identifier());
+                    return false;
+                }
+            }
+
+            true
+        });
+    }
+
+    let dictionaries: Vec<_> = types
+        .into_iter()
+        .filter_map(|(type_, _)| {
+            if let Type::Dictionary(dictionary) = type_ {
+                Some(dictionary)
+            } else {
+                None
+            }
+        })
+        .collect();
+
+    for dictionary in dictionaries {
+        println!("{}", dictionary.0);
+    }
 }
 
 /// Data for a single feature

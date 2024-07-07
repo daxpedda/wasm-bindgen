@@ -792,3 +792,46 @@ pub fn nullable(mut ty: weedle::types::Type) -> weedle::types::Type {
 
     ty
 }
+
+pub fn find_in_arguments(
+    in_: &weedle::common::Parenthesized<weedle::argument::ArgumentList>,
+    to_find: Identifier,
+) -> bool {
+    use weedle::argument::Argument;
+
+    in_.body.list.iter().any(|argument| match argument {
+        Argument::Single(argument) => find_in_type(&argument.type_.type_, to_find),
+        Argument::Variadic(argument) => find_in_type(&argument.type_, to_find),
+    })
+}
+
+pub fn find_in_type(in_: &weedle::types::Type, to_find: Identifier) -> bool {
+    use weedle::types::{NonAnyType, ReturnType, SingleType, Type, UnionMemberType, UnionType};
+
+    fn internal(in_: &NonAnyType, to_find: Identifier) -> bool {
+        match in_ {
+            NonAnyType::Promise(promise) => match &*promise.generics.body {
+                ReturnType::Undefined(_) => false,
+                ReturnType::Type(type_) => find_in_type(type_, to_find),
+            },
+            NonAnyType::Sequence(sequence) => find_in_type(&sequence.type_.generics.body, to_find),
+            NonAnyType::FrozenArrayType(array) => find_in_type(&array.type_.generics.body, to_find),
+            NonAnyType::RecordType(record) => find_in_type(&record.type_.generics.body.2, to_find),
+            NonAnyType::Identifier(identifier) => identifier.type_ == to_find,
+            _ => false,
+        }
+    }
+
+    fn find_in_union(union: &UnionType, to_find: Identifier) -> bool {
+        union.body.list.iter().any(|member| match member {
+            UnionMemberType::Single(non_any) => internal(&non_any.type_, to_find),
+            UnionMemberType::Union(union) => find_in_union(&union.type_, to_find),
+        })
+    }
+
+    match in_ {
+        Type::Single(SingleType::NonAny(non_any)) => internal(non_any, to_find),
+        Type::Union(union) => find_in_union(&union.type_, to_find),
+        _ => false,
+    }
+}
