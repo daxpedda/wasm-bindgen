@@ -104,15 +104,6 @@ type_wasm_native!(
     f64 as f64
 );
 
-/// The sentinel value is 2^32 + 1 for 32-bit primitive types.
-///
-/// 2^32 + 1 is used, because it's the smallest positive integer that cannot be
-/// represented by any 32-bit primitive. While any value >= 2^32 works as a
-/// sentinel value for 32-bit integers, it's a bit more tricky for `f32`. `f32`
-/// can represent all powers of 2 up to 2^127 exactly. And between 2^32 and 2^33,
-/// `f32` can represent all integers 2^32+512*k exactly.
-const F64_ABI_OPTION_SENTINEL: f64 = 4294967297_f64;
-
 macro_rules! type_wasm_native_f64_option {
     ($($t:tt as $c:tt)*) => ($(
         impl IntoWasmAbi for $t {
@@ -134,7 +125,10 @@ macro_rules! type_wasm_native_f64_option {
 
             #[inline]
             fn into_abi(self) -> Self::Abi {
-                self.map(|v| v as $c as f64).unwrap_or(F64_ABI_OPTION_SENTINEL)
+                self.map(|v| {
+                    let bytes = (v as $c).to_le_bytes();
+                    f64::from_le_bytes([bytes[0], bytes[1], bytes[2], bytes[3], 0, 0, 0, 0])
+                }).unwrap_or_else(|| f64::from_bits(0x1_0000_0000))
             }
         }
 
@@ -143,10 +137,11 @@ macro_rules! type_wasm_native_f64_option {
 
             #[inline]
             unsafe fn from_abi(js: Self::Abi) -> Self {
-                if js == F64_ABI_OPTION_SENTINEL {
+                if js == f64::from_bits(0x1_0000_0000) {
                     None
                 } else {
-                    Some(js as $c as $t)
+                    let js = js.to_le_bytes();
+                    Some($c::from_le_bytes([js[0], js[1], js[2], js[3]]) as $t)
                 }
             }
         }
@@ -286,8 +281,11 @@ impl<T> IntoWasmAbi for Option<*const T> {
 
     #[inline]
     fn into_abi(self) -> f64 {
-        self.map(|ptr| ptr as u32 as f64)
-            .unwrap_or(F64_ABI_OPTION_SENTINEL)
+        self.map(|ptr| {
+            let bytes = (ptr as u32).to_le_bytes();
+            f64::from_le_bytes([bytes[0], bytes[1], bytes[2], bytes[3], 0, 0, 0, 0])
+        })
+        .unwrap_or(f64::from_bits(0x1_0000_0000))
     }
 }
 
@@ -296,10 +294,11 @@ impl<T> FromWasmAbi for Option<*const T> {
 
     #[inline]
     unsafe fn from_abi(js: f64) -> Option<*const T> {
-        if js == F64_ABI_OPTION_SENTINEL {
+        if js == f64::from_bits(0x1_0000_0000) {
             None
         } else {
-            Some(js as u32 as *const T)
+            let js = js.to_le_bytes();
+            Some(u32::from_le_bytes([js[0], js[1], js[2], js[3]]) as *const T)
         }
     }
 }
@@ -327,8 +326,11 @@ impl<T> IntoWasmAbi for Option<*mut T> {
 
     #[inline]
     fn into_abi(self) -> f64 {
-        self.map(|ptr| ptr as u32 as f64)
-            .unwrap_or(F64_ABI_OPTION_SENTINEL)
+        self.map(|ptr| {
+            let bytes = (ptr as u32).to_le_bytes();
+            f64::from_le_bytes([bytes[0], bytes[1], bytes[2], bytes[3], 0, 0, 0, 0])
+        })
+        .unwrap_or(f64::from_bits(0x1_0000_0000))
     }
 }
 
@@ -337,10 +339,11 @@ impl<T> FromWasmAbi for Option<*mut T> {
 
     #[inline]
     unsafe fn from_abi(js: f64) -> Option<*mut T> {
-        if js == F64_ABI_OPTION_SENTINEL {
+        if js == f64::from_bits(0x1_0000_0000) {
             None
         } else {
-            Some(js as u32 as *mut T)
+            let js = js.to_le_bytes();
+            Some(u32::from_le_bytes([js[0], js[1], js[2], js[3]]) as *mut T)
         }
     }
 }

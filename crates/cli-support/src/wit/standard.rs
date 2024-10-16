@@ -333,7 +333,9 @@ pub enum Instruction {
         mem: walrus::MemoryId,
     },
     /// pops f64, pushes it viewed as an optional value with a known sentinel
-    OptionF64Sentinel,
+    OptionF64SentinelF32,
+    OptionF64SentinelU32,
+    OptionF64SentinelI32,
     /// pops i32, pushes it viewed as an optional value with a known sentinel
     OptionU32Sentinel,
     /// pops an i32, then `ty`, then pushes externref

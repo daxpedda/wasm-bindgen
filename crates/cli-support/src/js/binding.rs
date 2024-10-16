@@ -935,30 +935,19 @@ fn instruction(
 
         Instruction::F64FromOptionSentinelInt { signed } => {
             let val = js.pop();
-            js.cx.expose_is_like_none();
             js.assert_optional_number(&val);
 
-            // We need to convert the given number to a 32-bit integer before
-            // passing it to the ABI for 2 reasons:
-            // 1. Rust's behavior for `value_f64 as i32/u32` is different from
-            //    the WebAssembly behavior for values outside the 32-bit range.
-            //    We could implement this behavior in Rust too, but it's easier
-            //    to do it in JS.
-            // 2. If we allowed values outside the 32-bit range, the sentinel
-            //    value itself would be allowed. This would make it impossible
-            //    to distinguish between the sentinel value and a valid value.
-            //
-            // To perform the actual conversion, we use JS bit shifts. Handily,
-            // >> and >>> perform a conversion to i32 and u32 respectively
-            // to apply the bit shift, so we can use e.g. x >>> 0 to convert to
-            // u32.
-
-            let op = if *signed { ">>" } else { ">>>" };
-            js.push(format!("isLikeNone({val}) ? 0x100000001 : ({val}) {op} 0"));
+            if *signed {
+                js.cx.expose_number_to_option_i32();
+                js.push(format!("number_to_option_i32({val})"));
+            } else {
+                js.cx.expose_number_to_option_u32();
+                js.push(format!("number_to_option_u32({val})"));
+            }
         }
         Instruction::F64FromOptionSentinelF32 => {
             let val = js.pop();
-            js.cx.expose_is_like_none();
+            js.cx.expose_number_to_option_f32();
             js.assert_optional_number(&val);
 
             // Similar to the above 32-bit integer variant, we convert the
@@ -966,9 +955,7 @@ fn instruction(
             // ensures consistent behavior with WebAssembly and makes it
             // possible to use a sentinel value.
 
-            js.push(format!(
-                "isLikeNone({val}) ? 0x100000001 : Math.fround({val})"
-            ));
+            js.push(format!("number_to_option_f32({val})"));
         }
 
         Instruction::FromOptionNative { ty } => {
@@ -1328,9 +1315,22 @@ fn instruction(
             ));
         }
 
-        Instruction::OptionF64Sentinel => {
+        Instruction::OptionF64SentinelF32 => {
             let val = js.pop();
-            js.push(format!("{0} === 0x100000001 ? undefined : {0}", val));
+            js.cx.expose_number_from_option_f32();
+            js.push(format!("number_from_option_f32({0})", val));
+        }
+
+        Instruction::OptionF64SentinelU32 => {
+            let val = js.pop();
+            js.cx.expose_number_from_option_u32();
+            js.push(format!("number_from_option_u32({0})", val));
+        }
+
+        Instruction::OptionF64SentinelI32 => {
+            let val = js.pop();
+            js.cx.expose_number_from_option_i32();
+            js.push(format!("number_from_option_i32({0})", val));
         }
 
         Instruction::OptionU32Sentinel => {

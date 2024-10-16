@@ -3861,6 +3861,117 @@ __wbg_set_wasm(wasm);"
         self.used_string_enums.insert(string_enum_name.to_string());
     }
 
+    fn expose_number_from_option_f32(&mut self) {
+        if !self.should_write_global("number_from_option_f32") {
+            return;
+        }
+        self.global(
+            "
+            function number_from_option_f32(x) {
+                const buffer = new ArrayBuffer(8)
+                new Float64Array(buffer)[0] = x
+                return new Uint8Array(buffer)[4] === 1 ? undefined : new Float32Array(buffer)[0]
+            }
+        ",
+        );
+    }
+
+    fn expose_number_from_option_u32(&mut self) {
+        if !self.should_write_global("number_from_option_u32") {
+            return;
+        }
+        self.global(
+            "
+            function number_from_option_u32(x) {
+                const buffer = new ArrayBuffer(8)
+                new Float64Array(buffer)[0] = x
+                return new Uint8Array(buffer)[4] === 1 ? undefined : new Uint32Array(buffer)[0]
+            }
+        ",
+        );
+    }
+
+    fn expose_number_from_option_i32(&mut self) {
+        if !self.should_write_global("number_from_option_i32") {
+            return;
+        }
+        self.global(
+            "
+            function number_from_option_i32(x) {
+                const buffer = new ArrayBuffer(8)
+                new Float64Array(buffer)[0] = x
+                return new Uint8Array(buffer)[4] === 1 ? undefined : new Int32Array(buffer)[0]
+            }
+        ",
+        );
+    }
+
+    fn expose_number_to_option_f32(&mut self) {
+        if !self.should_write_global("number_to_option_f32") {
+            return;
+        }
+        self.expose_is_like_none();
+        self.global(
+            "
+            function number_to_option_f32(x) {
+                const buffer = new ArrayBuffer(8)
+
+                if (isLikeNone(x)) {
+                    new Uint8Array(buffer)[4] = 1
+                } else {
+                    new Float32Array(buffer)[0] = x
+                }
+
+                return new Float64Array(buffer)[0]
+            }
+        ",
+        );
+    }
+
+    fn expose_number_to_option_u32(&mut self) {
+        if !self.should_write_global("number_to_option_u32") {
+            return;
+        }
+        self.expose_is_like_none();
+        self.global(
+            "
+            function number_to_option_u32(x) {
+                const buffer = new ArrayBuffer(8)
+
+                if (isLikeNone(x)) {
+                    new Uint8Array(buffer)[4] = 1
+                } else {
+                    new Uint32Array(buffer)[0] = x
+                }
+
+                return new Float64Array(buffer)[0]
+            }
+        ",
+        );
+    }
+
+    fn expose_number_to_option_i32(&mut self) {
+        if !self.should_write_global("number_to_option_i32") {
+            return;
+        }
+        self.expose_is_like_none();
+        self.global(
+            "
+            function number_to_option_i32(x) {
+                const buffer = new ArrayBuffer(8)
+
+                if (isLikeNone(x)) {
+                    new Uint8Array(buffer)[4] = 1
+                } else {
+                    new Int32Array(buffer)[0] = x
+                }
+
+                return new Float64Array(buffer)[0]
+            }
+        ",
+        );
+    }
+
     fn generate_struct(&mut self, struct_: &AuxStruct) -> Result<(), Error> {
         let class = require_class(&mut self.exported_classes, &struct_.name);
         class.comments = format_doc_comments(&struct_.comments, None);

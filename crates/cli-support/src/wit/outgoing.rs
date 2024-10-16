@@ -261,11 +261,11 @@ impl InstructionBuilder<'_, '_> {
             Descriptor::U8 => self.out_option_sentinel32(AdapterType::U8),
             Descriptor::I16 => self.out_option_sentinel32(AdapterType::S16),
             Descriptor::U16 => self.out_option_sentinel32(AdapterType::U16),
-            Descriptor::I32 => self.out_option_sentinel64(AdapterType::S32),
-            Descriptor::U32 => self.out_option_sentinel64(AdapterType::U32),
+            Descriptor::I32 => self.out_option_sentinel64_i32(AdapterType::S32),
+            Descriptor::U32 => self.out_option_sentinel64_u32(AdapterType::U32),
             Descriptor::I64 => self.option_native(true, ValType::I64),
             Descriptor::U64 => self.option_native(false, ValType::I64),
-            Descriptor::F32 => self.out_option_sentinel64(AdapterType::F32),
+            Descriptor::F32 => self.out_option_sentinel64_f32(AdapterType::F32),
             Descriptor::F64 => self.option_native(true, ValType::F64),
             Descriptor::Boolean => {
                 self.instruction(
@@ -584,10 +584,26 @@ impl InstructionBuilder<'_, '_> {
         );
     }
 
-    fn out_option_sentinel64(&mut self, ty: AdapterType) {
+    fn out_option_sentinel64_f32(&mut self, ty: AdapterType) {
         self.instruction(
             &[AdapterType::F64],
-            Instruction::OptionF64Sentinel,
+            Instruction::OptionF64SentinelF32,
+            &[ty.option()],
+        );
+    }
+
+    fn out_option_sentinel64_u32(&mut self, ty: AdapterType) {
+        self.instruction(
+            &[AdapterType::F64],
+            Instruction::OptionF64SentinelU32,
+            &[ty.option()],
+        );
+    }
+
+    fn out_option_sentinel64_i32(&mut self, ty: AdapterType) {
+        self.instruction(
+            &[AdapterType::F64],
+            Instruction::OptionF64SentinelI32,
             &[ty.option()],
         );
     }
