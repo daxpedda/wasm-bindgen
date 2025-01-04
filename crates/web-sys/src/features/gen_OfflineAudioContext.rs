@@ -125,7 +125,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createAnalyser)]
     #[doc = "The `createAnalyser()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createAnalyser)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createAnalyser)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `AnalyserNode`, `OfflineAudioContext`*"]
     pub fn create_analyser(this: &OfflineAudioContext) -> Result<AnalyserNode, JsValue>;
@@ -133,7 +133,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createBiquadFilter)]
     #[doc = "The `createBiquadFilter()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createBiquadFilter)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createBiquadFilter)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BiquadFilterNode`, `OfflineAudioContext`*"]
     pub fn create_biquad_filter(this: &OfflineAudioContext) -> Result<BiquadFilterNode, JsValue>;
@@ -141,7 +141,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createBuffer)]
     #[doc = "The `createBuffer()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createBuffer)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createBuffer)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `AudioBuffer`, `OfflineAudioContext`*"]
     pub fn create_buffer(
@@ -154,7 +154,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createBufferSource)]
     #[doc = "The `createBufferSource()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createBufferSource)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createBufferSource)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `AudioBufferSourceNode`, `OfflineAudioContext`*"]
     pub fn create_buffer_source(
@@ -164,7 +164,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createChannelMerger)]
     #[doc = "The `createChannelMerger()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createChannelMerger)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createChannelMerger)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ChannelMergerNode`, `OfflineAudioContext`*"]
     pub fn create_channel_merger(this: &OfflineAudioContext) -> Result<ChannelMergerNode, JsValue>;
@@ -172,7 +172,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createChannelMerger)]
     #[doc = "The `createChannelMerger()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createChannelMerger)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createChannelMerger)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ChannelMergerNode`, `OfflineAudioContext`*"]
     pub fn create_channel_merger_with_number_of_inputs(
@@ -183,7 +183,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createChannelSplitter)]
     #[doc = "The `createChannelSplitter()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createChannelSplitter)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createChannelSplitter)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ChannelSplitterNode`, `OfflineAudioContext`*"]
     pub fn create_channel_splitter(
@@ -193,7 +193,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createChannelSplitter)]
     #[doc = "The `createChannelSplitter()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createChannelSplitter)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createChannelSplitter)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ChannelSplitterNode`, `OfflineAudioContext`*"]
     pub fn create_channel_splitter_with_number_of_outputs(
@@ -204,7 +204,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createConstantSource)]
     #[doc = "The `createConstantSource()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createConstantSource)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createConstantSource)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ConstantSourceNode`, `OfflineAudioContext`*"]
     pub fn create_constant_source(
@@ -214,7 +214,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createConvolver)]
     #[doc = "The `createConvolver()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createConvolver)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createConvolver)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ConvolverNode`, `OfflineAudioContext`*"]
     pub fn create_convolver(this: &OfflineAudioContext) -> Result<ConvolverNode, JsValue>;
@@ -222,7 +222,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createDelay)]
     #[doc = "The `createDelay()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createDelay)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createDelay)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `DelayNode`, `OfflineAudioContext`*"]
     pub fn create_delay(this: &OfflineAudioContext) -> Result<DelayNode, JsValue>;
@@ -230,7 +230,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createDelay)]
     #[doc = "The `createDelay()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createDelay)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createDelay)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `DelayNode`, `OfflineAudioContext`*"]
     pub fn create_delay_with_max_delay_time(
@@ -241,7 +241,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createDynamicsCompressor)]
     #[doc = "The `createDynamicsCompressor()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createDynamicsCompressor)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createDynamicsCompressor)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `DynamicsCompressorNode`, `OfflineAudioContext`*"]
     pub fn create_dynamics_compressor(
@@ -251,7 +251,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createGain)]
     #[doc = "The `createGain()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createGain)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createGain)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `GainNode`, `OfflineAudioContext`*"]
     pub fn create_gain(this: &OfflineAudioContext) -> Result<GainNode, JsValue>;
@@ -259,7 +259,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createIIRFilter)]
     #[doc = "The `createIIRFilter()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createIIRFilter)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createIIRFilter)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `IirFilterNode`, `OfflineAudioContext`*"]
     pub fn create_iir_filter(
@@ -271,7 +271,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createOscillator)]
     #[doc = "The `createOscillator()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createOscillator)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createOscillator)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OfflineAudioContext`, `OscillatorNode`*"]
     pub fn create_oscillator(this: &OfflineAudioContext) -> Result<OscillatorNode, JsValue>;
@@ -279,7 +279,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createPanner)]
     #[doc = "The `createPanner()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createPanner)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createPanner)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OfflineAudioContext`, `PannerNode`*"]
     pub fn create_panner(this: &OfflineAudioContext) -> Result<PannerNode, JsValue>;
@@ -287,7 +287,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createPeriodicWave)]
     #[doc = "The `createPeriodicWave()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createPeriodicWave)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createPeriodicWave)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OfflineAudioContext`, `PeriodicWave`*"]
     pub fn create_periodic_wave(
@@ -299,7 +299,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createPeriodicWave)]
     #[doc = "The `createPeriodicWave()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createPeriodicWave)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createPeriodicWave)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OfflineAudioContext`, `PeriodicWave`*"]
     pub fn create_periodic_wave_with_f32_array_and_f32_slice(
@@ -311,7 +311,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createPeriodicWave)]
     #[doc = "The `createPeriodicWave()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createPeriodicWave)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createPeriodicWave)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OfflineAudioContext`, `PeriodicWave`*"]
     pub fn create_periodic_wave_with_f32_slice_and_f32_array(
@@ -323,7 +323,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createPeriodicWave)]
     #[doc = "The `createPeriodicWave()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createPeriodicWave)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createPeriodicWave)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OfflineAudioContext`, `PeriodicWave`*"]
     pub fn create_periodic_wave_with_f32_array_and_f32_array(
@@ -335,7 +335,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createPeriodicWave)]
     #[doc = "The `createPeriodicWave()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createPeriodicWave)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createPeriodicWave)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OfflineAudioContext`, `PeriodicWave`, `PeriodicWaveConstraints`*"]
     pub fn create_periodic_wave_with_constraints(
@@ -348,7 +348,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createPeriodicWave)]
     #[doc = "The `createPeriodicWave()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createPeriodicWave)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createPeriodicWave)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OfflineAudioContext`, `PeriodicWave`, `PeriodicWaveConstraints`*"]
     pub fn create_periodic_wave_with_f32_array_and_f32_slice_and_constraints(
@@ -361,7 +361,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createPeriodicWave)]
     #[doc = "The `createPeriodicWave()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createPeriodicWave)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createPeriodicWave)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OfflineAudioContext`, `PeriodicWave`, `PeriodicWaveConstraints`*"]
     pub fn create_periodic_wave_with_f32_slice_and_f32_array_and_constraints(
@@ -374,7 +374,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createPeriodicWave)]
     #[doc = "The `createPeriodicWave()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createPeriodicWave)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createPeriodicWave)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OfflineAudioContext`, `PeriodicWave`, `PeriodicWaveConstraints`*"]
     pub fn create_periodic_wave_with_f32_array_and_f32_array_and_constraints(
@@ -387,7 +387,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createScriptProcessor)]
     #[doc = "The `createScriptProcessor()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createScriptProcessor)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createScriptProcessor)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OfflineAudioContext`, `ScriptProcessorNode`*"]
     pub fn create_script_processor(
@@ -397,7 +397,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createScriptProcessor)]
     #[doc = "The `createScriptProcessor()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createScriptProcessor)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createScriptProcessor)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OfflineAudioContext`, `ScriptProcessorNode`*"]
     pub fn create_script_processor_with_buffer_size(
@@ -408,7 +408,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createScriptProcessor)]
     #[doc = "The `createScriptProcessor()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createScriptProcessor)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createScriptProcessor)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OfflineAudioContext`, `ScriptProcessorNode`*"]
     pub fn create_script_processor_with_buffer_size_and_number_of_input_channels(
@@ -420,7 +420,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createScriptProcessor)]
     #[doc = "The `createScriptProcessor()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createScriptProcessor)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createScriptProcessor)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OfflineAudioContext`, `ScriptProcessorNode`*"]
     pub fn create_script_processor_with_buffer_size_and_number_of_input_channels_and_number_of_output_channels(
@@ -433,7 +433,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createStereoPanner)]
     #[doc = "The `createStereoPanner()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createStereoPanner)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createStereoPanner)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OfflineAudioContext`, `StereoPannerNode`*"]
     pub fn create_stereo_panner(this: &OfflineAudioContext) -> Result<StereoPannerNode, JsValue>;
@@ -441,14 +441,14 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = createWaveShaper)]
     #[doc = "The `createWaveShaper()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/createWaveShaper)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createWaveShaper)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OfflineAudioContext`, `WaveShaperNode`*"]
     pub fn create_wave_shaper(this: &OfflineAudioContext) -> Result<WaveShaperNode, JsValue>;
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = decodeAudioData)]
     #[doc = "The `decodeAudioData()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/decodeAudioData)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/decodeAudioData)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OfflineAudioContext`*"]
     pub fn decode_audio_data(
@@ -458,7 +458,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = decodeAudioData)]
     #[doc = "The `decodeAudioData()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/decodeAudioData)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/decodeAudioData)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OfflineAudioContext`*"]
     pub fn decode_audio_data_with_success_callback(
@@ -469,7 +469,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = decodeAudioData)]
     #[doc = "The `decodeAudioData()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/decodeAudioData)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/decodeAudioData)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OfflineAudioContext`*"]
     pub fn decode_audio_data_with_success_callback_and_error_callback(
@@ -481,7 +481,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OfflineAudioContext" , js_name = resume)]
     #[doc = "The `resume()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext/resume)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/resume)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OfflineAudioContext`*"]
     pub fn resume(this: &OfflineAudioContext) -> Result<::js_sys::Promise, JsValue>;

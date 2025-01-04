@@ -55,7 +55,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "SVGSymbolElement" , js_name = hasExtension)]
     #[doc = "The `hasExtension()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/SVGSymbolElement/hasExtension)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/SVGTests/hasExtension)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `SvgSymbolElement`*"]
     pub fn has_extension(this: &SvgSymbolElement, extension: &str) -> bool;

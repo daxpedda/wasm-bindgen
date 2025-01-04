@@ -76,7 +76,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createAnalyser)]
     #[doc = "The `createAnalyser()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createAnalyser)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createAnalyser)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `AnalyserNode`, `BaseAudioContext`*"]
     pub fn create_analyser(this: &BaseAudioContext) -> Result<AnalyserNode, JsValue>;
@@ -84,7 +84,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createBiquadFilter)]
     #[doc = "The `createBiquadFilter()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createBiquadFilter)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createBiquadFilter)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`, `BiquadFilterNode`*"]
     pub fn create_biquad_filter(this: &BaseAudioContext) -> Result<BiquadFilterNode, JsValue>;
@@ -92,7 +92,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createBuffer)]
     #[doc = "The `createBuffer()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createBuffer)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createBuffer)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `AudioBuffer`, `BaseAudioContext`*"]
     pub fn create_buffer(
@@ -105,7 +105,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createBufferSource)]
     #[doc = "The `createBufferSource()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createBufferSource)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createBufferSource)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `AudioBufferSourceNode`, `BaseAudioContext`*"]
     pub fn create_buffer_source(this: &BaseAudioContext) -> Result<AudioBufferSourceNode, JsValue>;
@@ -113,7 +113,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createChannelMerger)]
     #[doc = "The `createChannelMerger()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createChannelMerger)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createChannelMerger)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`, `ChannelMergerNode`*"]
     pub fn create_channel_merger(this: &BaseAudioContext) -> Result<ChannelMergerNode, JsValue>;
@@ -121,7 +121,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createChannelMerger)]
     #[doc = "The `createChannelMerger()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createChannelMerger)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createChannelMerger)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`, `ChannelMergerNode`*"]
     pub fn create_channel_merger_with_number_of_inputs(
@@ -132,7 +132,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createChannelSplitter)]
     #[doc = "The `createChannelSplitter()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createChannelSplitter)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createChannelSplitter)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`, `ChannelSplitterNode`*"]
     pub fn create_channel_splitter(this: &BaseAudioContext)
@@ -141,7 +141,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createChannelSplitter)]
     #[doc = "The `createChannelSplitter()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createChannelSplitter)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createChannelSplitter)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`, `ChannelSplitterNode`*"]
     pub fn create_channel_splitter_with_number_of_outputs(
@@ -152,7 +152,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createConstantSource)]
     #[doc = "The `createConstantSource()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createConstantSource)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createConstantSource)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`, `ConstantSourceNode`*"]
     pub fn create_constant_source(this: &BaseAudioContext) -> Result<ConstantSourceNode, JsValue>;
@@ -160,7 +160,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createConvolver)]
     #[doc = "The `createConvolver()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createConvolver)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createConvolver)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`, `ConvolverNode`*"]
     pub fn create_convolver(this: &BaseAudioContext) -> Result<ConvolverNode, JsValue>;
@@ -168,7 +168,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createDelay)]
     #[doc = "The `createDelay()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createDelay)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createDelay)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`, `DelayNode`*"]
     pub fn create_delay(this: &BaseAudioContext) -> Result<DelayNode, JsValue>;
@@ -176,7 +176,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createDelay)]
     #[doc = "The `createDelay()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createDelay)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createDelay)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`, `DelayNode`*"]
     pub fn create_delay_with_max_delay_time(
@@ -187,7 +187,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createDynamicsCompressor)]
     #[doc = "The `createDynamicsCompressor()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createDynamicsCompressor)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createDynamicsCompressor)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`, `DynamicsCompressorNode`*"]
     pub fn create_dynamics_compressor(
@@ -197,7 +197,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createGain)]
     #[doc = "The `createGain()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createGain)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createGain)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`, `GainNode`*"]
     pub fn create_gain(this: &BaseAudioContext) -> Result<GainNode, JsValue>;
@@ -205,7 +205,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createIIRFilter)]
     #[doc = "The `createIIRFilter()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createIIRFilter)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createIIRFilter)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`, `IirFilterNode`*"]
     pub fn create_iir_filter(
@@ -217,7 +217,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createOscillator)]
     #[doc = "The `createOscillator()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createOscillator)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createOscillator)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`, `OscillatorNode`*"]
     pub fn create_oscillator(this: &BaseAudioContext) -> Result<OscillatorNode, JsValue>;
@@ -225,7 +225,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createPanner)]
     #[doc = "The `createPanner()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createPanner)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createPanner)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`, `PannerNode`*"]
     pub fn create_panner(this: &BaseAudioContext) -> Result<PannerNode, JsValue>;
@@ -233,7 +233,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createPeriodicWave)]
     #[doc = "The `createPeriodicWave()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createPeriodicWave)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createPeriodicWave)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`, `PeriodicWave`*"]
     pub fn create_periodic_wave(
@@ -245,7 +245,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createPeriodicWave)]
     #[doc = "The `createPeriodicWave()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createPeriodicWave)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createPeriodicWave)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`, `PeriodicWave`*"]
     pub fn create_periodic_wave_with_f32_array_and_f32_slice(
@@ -257,7 +257,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createPeriodicWave)]
     #[doc = "The `createPeriodicWave()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createPeriodicWave)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createPeriodicWave)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`, `PeriodicWave`*"]
     pub fn create_periodic_wave_with_f32_slice_and_f32_array(
@@ -269,7 +269,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createPeriodicWave)]
     #[doc = "The `createPeriodicWave()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createPeriodicWave)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createPeriodicWave)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`, `PeriodicWave`*"]
     pub fn create_periodic_wave_with_f32_array_and_f32_array(
@@ -281,7 +281,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createPeriodicWave)]
     #[doc = "The `createPeriodicWave()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createPeriodicWave)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createPeriodicWave)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`, `PeriodicWave`, `PeriodicWaveConstraints`*"]
     pub fn create_periodic_wave_with_constraints(
@@ -294,7 +294,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createPeriodicWave)]
     #[doc = "The `createPeriodicWave()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createPeriodicWave)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createPeriodicWave)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`, `PeriodicWave`, `PeriodicWaveConstraints`*"]
     pub fn create_periodic_wave_with_f32_array_and_f32_slice_and_constraints(
@@ -307,7 +307,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createPeriodicWave)]
     #[doc = "The `createPeriodicWave()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createPeriodicWave)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createPeriodicWave)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`, `PeriodicWave`, `PeriodicWaveConstraints`*"]
     pub fn create_periodic_wave_with_f32_slice_and_f32_array_and_constraints(
@@ -320,7 +320,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createPeriodicWave)]
     #[doc = "The `createPeriodicWave()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createPeriodicWave)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createPeriodicWave)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`, `PeriodicWave`, `PeriodicWaveConstraints`*"]
     pub fn create_periodic_wave_with_f32_array_and_f32_array_and_constraints(
@@ -333,7 +333,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createScriptProcessor)]
     #[doc = "The `createScriptProcessor()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createScriptProcessor)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createScriptProcessor)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`, `ScriptProcessorNode`*"]
     pub fn create_script_processor(this: &BaseAudioContext)
@@ -342,7 +342,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createScriptProcessor)]
     #[doc = "The `createScriptProcessor()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createScriptProcessor)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createScriptProcessor)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`, `ScriptProcessorNode`*"]
     pub fn create_script_processor_with_buffer_size(
@@ -353,7 +353,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createScriptProcessor)]
     #[doc = "The `createScriptProcessor()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createScriptProcessor)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createScriptProcessor)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`, `ScriptProcessorNode`*"]
     pub fn create_script_processor_with_buffer_size_and_number_of_input_channels(
@@ -365,7 +365,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createScriptProcessor)]
     #[doc = "The `createScriptProcessor()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createScriptProcessor)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createScriptProcessor)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`, `ScriptProcessorNode`*"]
     pub fn create_script_processor_with_buffer_size_and_number_of_input_channels_and_number_of_output_channels(
@@ -378,7 +378,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createStereoPanner)]
     #[doc = "The `createStereoPanner()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createStereoPanner)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createStereoPanner)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`, `StereoPannerNode`*"]
     pub fn create_stereo_panner(this: &BaseAudioContext) -> Result<StereoPannerNode, JsValue>;
@@ -386,14 +386,14 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = createWaveShaper)]
     #[doc = "The `createWaveShaper()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createWaveShaper)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/createWaveShaper)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`, `WaveShaperNode`*"]
     pub fn create_wave_shaper(this: &BaseAudioContext) -> Result<WaveShaperNode, JsValue>;
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = decodeAudioData)]
     #[doc = "The `decodeAudioData()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/decodeAudioData)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/decodeAudioData)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`*"]
     pub fn decode_audio_data(
@@ -403,7 +403,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = decodeAudioData)]
     #[doc = "The `decodeAudioData()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/decodeAudioData)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/decodeAudioData)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`*"]
     pub fn decode_audio_data_with_success_callback(
@@ -414,7 +414,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = decodeAudioData)]
     #[doc = "The `decodeAudioData()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/decodeAudioData)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/decodeAudioData)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`*"]
     pub fn decode_audio_data_with_success_callback_and_error_callback(
@@ -426,7 +426,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "BaseAudioContext" , js_name = resume)]
     #[doc = "The `resume()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/resume)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/rustBaseAudioContext/resume)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BaseAudioContext`*"]
     pub fn resume(this: &BaseAudioContext) -> Result<::js_sys::Promise, JsValue>;

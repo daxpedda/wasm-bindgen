@@ -240,42 +240,42 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = atob)]
     #[doc = "The `atob()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/atob)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/atob)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn atob(this: &WorkerGlobalScope, atob: &str) -> Result<::alloc::string::String, JsValue>;
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = btoa)]
     #[doc = "The `btoa()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/btoa)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/btoa)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn btoa(this: &WorkerGlobalScope, btoa: &str) -> Result<::alloc::string::String, JsValue>;
     # [wasm_bindgen (method , structural , js_class = "WorkerGlobalScope" , js_name = clearInterval)]
     #[doc = "The `clearInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/clearInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn clear_interval(this: &WorkerGlobalScope);
     # [wasm_bindgen (method , structural , js_class = "WorkerGlobalScope" , js_name = clearInterval)]
     #[doc = "The `clearInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/clearInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn clear_interval_with_handle(this: &WorkerGlobalScope, handle: i32);
     # [wasm_bindgen (method , structural , js_class = "WorkerGlobalScope" , js_name = clearTimeout)]
     #[doc = "The `clearTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/clearTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn clear_timeout(this: &WorkerGlobalScope);
     # [wasm_bindgen (method , structural , js_class = "WorkerGlobalScope" , js_name = clearTimeout)]
     #[doc = "The `clearTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/clearTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn clear_timeout_with_handle(this: &WorkerGlobalScope, handle: i32);
@@ -283,7 +283,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlImageElement`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_html_image_element(
@@ -294,7 +294,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `SvgImageElement`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_svg_image_element(
@@ -305,7 +305,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlCanvasElement`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_html_canvas_element(
@@ -316,7 +316,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlVideoElement`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_html_video_element(
@@ -327,7 +327,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageBitmap`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_image_bitmap(
@@ -338,7 +338,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvas`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_offscreen_canvas(
@@ -350,7 +350,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `VideoFrame`, `WorkerGlobalScope`*"]
     #[doc = ""]
@@ -364,7 +364,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Blob`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_blob(
@@ -375,7 +375,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageData`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_image_data(
@@ -386,7 +386,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlImageElement`, `ImageBitmapOptions`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_html_image_element_and_image_bitmap_options(
@@ -398,7 +398,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageBitmapOptions`, `SvgImageElement`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_svg_image_element_and_image_bitmap_options(
@@ -410,7 +410,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlCanvasElement`, `ImageBitmapOptions`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_html_canvas_element_and_image_bitmap_options(
@@ -422,7 +422,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlVideoElement`, `ImageBitmapOptions`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_html_video_element_and_image_bitmap_options(
@@ -434,7 +434,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageBitmap`, `ImageBitmapOptions`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_image_bitmap_and_image_bitmap_options(
@@ -446,7 +446,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageBitmapOptions`, `OffscreenCanvas`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_offscreen_canvas_and_image_bitmap_options(
@@ -459,7 +459,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageBitmapOptions`, `VideoFrame`, `WorkerGlobalScope`*"]
     #[doc = ""]
@@ -474,7 +474,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Blob`, `ImageBitmapOptions`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_blob_and_image_bitmap_options(
@@ -486,7 +486,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageBitmapOptions`, `ImageData`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_image_data_and_image_bitmap_options(
@@ -498,7 +498,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlImageElement`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_html_image_element_and_a_sx_and_a_sy_and_a_sw_and_a_sh(
@@ -513,7 +513,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `SvgImageElement`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_svg_image_element_and_a_sx_and_a_sy_and_a_sw_and_a_sh(
@@ -528,7 +528,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlCanvasElement`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_html_canvas_element_and_a_sx_and_a_sy_and_a_sw_and_a_sh(
@@ -543,7 +543,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlVideoElement`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_html_video_element_and_a_sx_and_a_sy_and_a_sw_and_a_sh(
@@ -558,7 +558,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageBitmap`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_image_bitmap_and_a_sx_and_a_sy_and_a_sw_and_a_sh(
@@ -573,7 +573,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvas`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_offscreen_canvas_and_a_sx_and_a_sy_and_a_sw_and_a_sh(
@@ -589,7 +589,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `VideoFrame`, `WorkerGlobalScope`*"]
     #[doc = ""]
@@ -607,7 +607,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Blob`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_blob_and_a_sx_and_a_sy_and_a_sw_and_a_sh(
@@ -622,7 +622,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageData`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_image_data_and_a_sx_and_a_sy_and_a_sw_and_a_sh(
@@ -637,7 +637,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlImageElement`, `ImageBitmapOptions`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_html_image_element_and_a_sx_and_a_sy_and_a_sw_and_a_sh_and_a_options(
@@ -653,7 +653,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageBitmapOptions`, `SvgImageElement`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_svg_image_element_and_a_sx_and_a_sy_and_a_sw_and_a_sh_and_a_options(
@@ -669,7 +669,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlCanvasElement`, `ImageBitmapOptions`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_html_canvas_element_and_a_sx_and_a_sy_and_a_sw_and_a_sh_and_a_options(
@@ -685,7 +685,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlVideoElement`, `ImageBitmapOptions`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_html_video_element_and_a_sx_and_a_sy_and_a_sw_and_a_sh_and_a_options(
@@ -701,7 +701,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageBitmap`, `ImageBitmapOptions`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_image_bitmap_and_a_sx_and_a_sy_and_a_sw_and_a_sh_and_a_options(
@@ -717,7 +717,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageBitmapOptions`, `OffscreenCanvas`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_offscreen_canvas_and_a_sx_and_a_sy_and_a_sw_and_a_sh_and_a_options(
@@ -734,7 +734,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageBitmapOptions`, `VideoFrame`, `WorkerGlobalScope`*"]
     #[doc = ""]
@@ -753,7 +753,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Blob`, `ImageBitmapOptions`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_blob_and_a_sx_and_a_sy_and_a_sw_and_a_sh_and_a_options(
@@ -769,7 +769,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageBitmapOptions`, `ImageData`, `WorkerGlobalScope`*"]
     pub fn create_image_bitmap_with_image_data_and_a_sx_and_a_sy_and_a_sw_and_a_sh_and_a_options(
@@ -785,14 +785,14 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "WorkerGlobalScope" , js_name = fetch)]
     #[doc = "The `fetch()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/fetch)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Request`, `WorkerGlobalScope`*"]
     pub fn fetch_with_request(this: &WorkerGlobalScope, input: &Request) -> ::js_sys::Promise;
     # [wasm_bindgen (method , structural , js_class = "WorkerGlobalScope" , js_name = fetch)]
     #[doc = "The `fetch()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/fetch)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn fetch_with_str(this: &WorkerGlobalScope, input: &str) -> ::js_sys::Promise;
@@ -800,7 +800,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "WorkerGlobalScope" , js_name = fetch)]
     #[doc = "The `fetch()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/fetch)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Request`, `RequestInit`, `WorkerGlobalScope`*"]
     pub fn fetch_with_request_and_init(
@@ -812,7 +812,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "WorkerGlobalScope" , js_name = fetch)]
     #[doc = "The `fetch()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/fetch)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `RequestInit`, `WorkerGlobalScope`*"]
     pub fn fetch_with_str_and_init(
@@ -823,14 +823,14 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "WorkerGlobalScope" , js_name = queueMicrotask)]
     #[doc = "The `queueMicrotask()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/queueMicrotask)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/queueMicrotask)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn queue_microtask(this: &WorkerGlobalScope, callback: &::js_sys::Function);
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_interval_with_callback(
@@ -840,7 +840,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , variadic , js_class = "WorkerGlobalScope" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_interval_with_callback_and_timeout_and_arguments(
@@ -852,7 +852,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_interval_with_callback_and_timeout_and_arguments_0(
@@ -863,7 +863,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_interval_with_callback_and_timeout_and_arguments_1(
@@ -875,7 +875,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_interval_with_callback_and_timeout_and_arguments_2(
@@ -888,7 +888,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_interval_with_callback_and_timeout_and_arguments_3(
@@ -902,7 +902,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_interval_with_callback_and_timeout_and_arguments_4(
@@ -917,7 +917,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_interval_with_callback_and_timeout_and_arguments_5(
@@ -933,7 +933,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_interval_with_callback_and_timeout_and_arguments_6(
@@ -950,7 +950,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_interval_with_callback_and_timeout_and_arguments_7(
@@ -968,14 +968,14 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_interval_with_str(this: &WorkerGlobalScope, handler: &str) -> Result<i32, JsValue>;
     # [wasm_bindgen (catch , method , structural , variadic , js_class = "WorkerGlobalScope" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_interval_with_str_and_timeout_and_unused(
@@ -987,7 +987,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_interval_with_str_and_timeout_and_unused_0(
@@ -998,7 +998,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_interval_with_str_and_timeout_and_unused_1(
@@ -1010,7 +1010,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_interval_with_str_and_timeout_and_unused_2(
@@ -1023,7 +1023,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_interval_with_str_and_timeout_and_unused_3(
@@ -1037,7 +1037,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_interval_with_str_and_timeout_and_unused_4(
@@ -1052,7 +1052,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_interval_with_str_and_timeout_and_unused_5(
@@ -1068,7 +1068,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_interval_with_str_and_timeout_and_unused_6(
@@ -1085,7 +1085,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_interval_with_str_and_timeout_and_unused_7(
@@ -1103,7 +1103,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_timeout_with_callback(
@@ -1113,7 +1113,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , variadic , js_class = "WorkerGlobalScope" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_timeout_with_callback_and_timeout_and_arguments(
@@ -1125,7 +1125,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_timeout_with_callback_and_timeout_and_arguments_0(
@@ -1136,7 +1136,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_timeout_with_callback_and_timeout_and_arguments_1(
@@ -1148,7 +1148,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_timeout_with_callback_and_timeout_and_arguments_2(
@@ -1161,7 +1161,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_timeout_with_callback_and_timeout_and_arguments_3(
@@ -1175,7 +1175,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_timeout_with_callback_and_timeout_and_arguments_4(
@@ -1190,7 +1190,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_timeout_with_callback_and_timeout_and_arguments_5(
@@ -1206,7 +1206,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_timeout_with_callback_and_timeout_and_arguments_6(
@@ -1223,7 +1223,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_timeout_with_callback_and_timeout_and_arguments_7(
@@ -1241,14 +1241,14 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_timeout_with_str(this: &WorkerGlobalScope, handler: &str) -> Result<i32, JsValue>;
     # [wasm_bindgen (catch , method , structural , variadic , js_class = "WorkerGlobalScope" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_timeout_with_str_and_timeout_and_unused(
@@ -1260,7 +1260,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_timeout_with_str_and_timeout_and_unused_0(
@@ -1271,7 +1271,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_timeout_with_str_and_timeout_and_unused_1(
@@ -1283,7 +1283,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_timeout_with_str_and_timeout_and_unused_2(
@@ -1296,7 +1296,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_timeout_with_str_and_timeout_and_unused_3(
@@ -1310,7 +1310,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_timeout_with_str_and_timeout_and_unused_4(
@@ -1325,7 +1325,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_timeout_with_str_and_timeout_and_unused_5(
@@ -1341,7 +1341,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_timeout_with_str_and_timeout_and_unused_6(
@@ -1358,7 +1358,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "WorkerGlobalScope" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerGlobalScope`*"]
     pub fn set_timeout_with_str_and_timeout_and_unused_7(

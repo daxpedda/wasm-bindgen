@@ -111,6 +111,11 @@ pub(crate) struct AttributeMixinData<'src> {
     pub(crate) stability: ApiStability,
 }
 
+pub(crate) struct MixinOrIncludeData<'src, 'mixin> {
+    pub(crate) included_class: Option<&'mixin str>,
+    pub(crate) data: &'mixin MixinData<'src>,
+}
+
 /// We need to collect mixin data during the first pass, to be used later.
 #[derive(Default)]
 pub(crate) struct MixinData<'src> {
@@ -1564,19 +1569,27 @@ impl<'a> FirstPassRecord<'a> {
     pub fn all_mixins<'me>(
         &'me self,
         interface: &str,
-    ) -> impl Iterator<Item = &'me MixinData<'a>> + 'me {
+    ) -> impl Iterator<Item = MixinOrIncludeData<'a, 'me>> + 'me {
         let mut set = Vec::new();
-        self.fill_mixins(interface, &mut set);
+        self.fill_mixins(interface, &mut set, None);
         set.into_iter()
     }
 
-    fn fill_mixins<'me>(&'me self, mixin_name: &str, list: &mut Vec<&'me MixinData<'a>>) {
-        if let Some(mixin_data) = self.mixins.get(mixin_name) {
-            list.push(mixin_data);
+    fn fill_mixins<'me>(
+        &'me self,
+        mixin_name: &str,
+        list: &mut Vec<MixinOrIncludeData<'a, 'me>>,
+        included_class: Option<&'me str>,
+    ) {
+        if let Some(data) = self.mixins.get(mixin_name) {
+            list.push(MixinOrIncludeData {
+                included_class,
+                data,
+            });
         }
         if let Some(mixin_names) = self.includes.get(mixin_name) {
             for mixin_name in mixin_names {
-                self.fill_mixins(mixin_name, list);
+                self.fill_mixins(mixin_name, list, Some(mixin_name));
             }
         }
     }

@@ -52,7 +52,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Text" , js_name = convertPointFromNode)]
     #[doc = "The `convertPointFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Text/convertPointFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertPointFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `DomPoint`, `DomPointInit`, `Text`*"]
     pub fn convert_point_from_node_with_text(
@@ -64,7 +64,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Text" , js_name = convertPointFromNode)]
     #[doc = "The `convertPointFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Text/convertPointFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertPointFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `DomPoint`, `DomPointInit`, `Element`, `Text`*"]
     pub fn convert_point_from_node_with_element(
@@ -76,7 +76,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Text" , js_name = convertPointFromNode)]
     #[doc = "The `convertPointFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Text/convertPointFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertPointFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`, `DomPoint`, `DomPointInit`, `Text`*"]
     pub fn convert_point_from_node_with_document(
@@ -92,7 +92,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Text" , js_name = convertPointFromNode)]
     #[doc = "The `convertPointFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Text/convertPointFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertPointFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ConvertCoordinateOptions`, `DomPoint`, `DomPointInit`, `Text`*"]
     pub fn convert_point_from_node_with_text_and_options(
@@ -110,7 +110,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Text" , js_name = convertPointFromNode)]
     #[doc = "The `convertPointFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Text/convertPointFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertPointFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ConvertCoordinateOptions`, `DomPoint`, `DomPointInit`, `Element`, `Text`*"]
     pub fn convert_point_from_node_with_element_and_options(
@@ -128,7 +128,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Text" , js_name = convertPointFromNode)]
     #[doc = "The `convertPointFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Text/convertPointFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertPointFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ConvertCoordinateOptions`, `Document`, `DomPoint`, `DomPointInit`, `Text`*"]
     pub fn convert_point_from_node_with_document_and_options(
@@ -141,7 +141,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Text" , js_name = convertQuadFromNode)]
     #[doc = "The `convertQuadFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Text/convertQuadFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertQuadFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `DomQuad`, `Text`*"]
     pub fn convert_quad_from_node_with_text(
@@ -153,7 +153,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Text" , js_name = convertQuadFromNode)]
     #[doc = "The `convertQuadFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Text/convertQuadFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertQuadFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `DomQuad`, `Element`, `Text`*"]
     pub fn convert_quad_from_node_with_element(
@@ -165,7 +165,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Text" , js_name = convertQuadFromNode)]
     #[doc = "The `convertQuadFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Text/convertQuadFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertQuadFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`, `DomQuad`, `Text`*"]
     pub fn convert_quad_from_node_with_document(
@@ -177,7 +177,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Text" , js_name = convertQuadFromNode)]
     #[doc = "The `convertQuadFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Text/convertQuadFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertQuadFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ConvertCoordinateOptions`, `DomQuad`, `Text`*"]
     pub fn convert_quad_from_node_with_text_and_options(
@@ -194,7 +194,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Text" , js_name = convertQuadFromNode)]
     #[doc = "The `convertQuadFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Text/convertQuadFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertQuadFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ConvertCoordinateOptions`, `DomQuad`, `Element`, `Text`*"]
     pub fn convert_quad_from_node_with_element_and_options(
@@ -211,7 +211,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Text" , js_name = convertQuadFromNode)]
     #[doc = "The `convertQuadFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Text/convertQuadFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertQuadFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ConvertCoordinateOptions`, `Document`, `DomQuad`, `Text`*"]
     pub fn convert_quad_from_node_with_document_and_options(
@@ -224,7 +224,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Text" , js_name = convertRectFromNode)]
     #[doc = "The `convertRectFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Text/convertRectFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertRectFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `DomQuad`, `DomRectReadOnly`, `Text`*"]
     pub fn convert_rect_from_node_with_text(
@@ -236,7 +236,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Text" , js_name = convertRectFromNode)]
     #[doc = "The `convertRectFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Text/convertRectFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertRectFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `DomQuad`, `DomRectReadOnly`, `Element`, `Text`*"]
     pub fn convert_rect_from_node_with_element(
@@ -248,7 +248,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Text" , js_name = convertRectFromNode)]
     #[doc = "The `convertRectFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Text/convertRectFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertRectFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`, `DomQuad`, `DomRectReadOnly`, `Text`*"]
     pub fn convert_rect_from_node_with_document(
@@ -264,7 +264,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Text" , js_name = convertRectFromNode)]
     #[doc = "The `convertRectFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Text/convertRectFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertRectFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ConvertCoordinateOptions`, `DomQuad`, `DomRectReadOnly`, `Text`*"]
     pub fn convert_rect_from_node_with_text_and_options(
@@ -282,7 +282,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Text" , js_name = convertRectFromNode)]
     #[doc = "The `convertRectFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Text/convertRectFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertRectFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ConvertCoordinateOptions`, `DomQuad`, `DomRectReadOnly`, `Element`, `Text`*"]
     pub fn convert_rect_from_node_with_element_and_options(
@@ -300,7 +300,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Text" , js_name = convertRectFromNode)]
     #[doc = "The `convertRectFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Text/convertRectFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertRectFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ConvertCoordinateOptions`, `Document`, `DomQuad`, `DomRectReadOnly`, `Text`*"]
     pub fn convert_rect_from_node_with_document_and_options(
@@ -312,7 +312,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Text" , js_name = getBoxQuads)]
     #[doc = "The `getBoxQuads()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Text/getBoxQuads)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/getBoxQuads)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Text`*"]
     pub fn get_box_quads(this: &Text) -> Result<::js_sys::Array, JsValue>;
@@ -320,7 +320,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Text" , js_name = getBoxQuads)]
     #[doc = "The `getBoxQuads()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Text/getBoxQuads)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/getBoxQuads)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BoxQuadOptions`, `Text`*"]
     pub fn get_box_quads_with_options(

@@ -43,7 +43,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "GPUComputePipeline" , js_name = getBindGroupLayout)]
     #[doc = "The `getBindGroupLayout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GPUComputePipeline/getBindGroupLayout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GPUPipelineBase/getBindGroupLayout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `GpuBindGroupLayout`, `GpuComputePipeline`*"]
     #[doc = ""]

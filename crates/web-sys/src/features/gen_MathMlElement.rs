@@ -1305,14 +1305,14 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "MathMLElement" , js_name = blur)]
     #[doc = "The `blur()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement/blur)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/HTMLOrSVGElement/blur)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MathMlElement`*"]
     pub fn blur(this: &MathMlElement) -> Result<(), JsValue>;
     # [wasm_bindgen (catch , method , structural , js_class = "MathMLElement" , js_name = focus)]
     #[doc = "The `focus()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement/focus)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/HTMLOrSVGElement/focus)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MathMlElement`*"]
     pub fn focus(this: &MathMlElement) -> Result<(), JsValue>;
@@ -1320,7 +1320,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "MathMLElement" , js_name = focus)]
     #[doc = "The `focus()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement/focus)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/HTMLOrSVGElement/focus)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `FocusOptions`, `MathMlElement`*"]
     pub fn focus_with_options(this: &MathMlElement, options: &FocusOptions) -> Result<(), JsValue>;

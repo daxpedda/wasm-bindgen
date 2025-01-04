@@ -2200,14 +2200,14 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "Document" , js_name = elementFromPoint)]
     #[doc = "The `elementFromPoint()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/elementFromPoint)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/DocumentOrShadowRoot/elementFromPoint)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`, `Element`*"]
     pub fn element_from_point(this: &Document, x: f32, y: f32) -> Option<Element>;
     # [wasm_bindgen (method , structural , js_class = "Document" , js_name = elementsFromPoint)]
     #[doc = "The `elementsFromPoint()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/elementsFromPoint)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/DocumentOrShadowRoot/elementsFromPoint)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn elements_from_point(this: &Document, x: f32, y: f32) -> ::js_sys::Array;
@@ -2215,7 +2215,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = convertPointFromNode)]
     #[doc = "The `convertPointFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/convertPointFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertPointFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`, `DomPoint`, `DomPointInit`, `Text`*"]
     pub fn convert_point_from_node_with_text(
@@ -2227,7 +2227,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = convertPointFromNode)]
     #[doc = "The `convertPointFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/convertPointFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertPointFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`, `DomPoint`, `DomPointInit`, `Element`*"]
     pub fn convert_point_from_node_with_element(
@@ -2239,7 +2239,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = convertPointFromNode)]
     #[doc = "The `convertPointFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/convertPointFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertPointFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`, `DomPoint`, `DomPointInit`*"]
     pub fn convert_point_from_node_with_document(
@@ -2256,7 +2256,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = convertPointFromNode)]
     #[doc = "The `convertPointFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/convertPointFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertPointFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ConvertCoordinateOptions`, `Document`, `DomPoint`, `DomPointInit`, `Text`*"]
     pub fn convert_point_from_node_with_text_and_options(
@@ -2274,7 +2274,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = convertPointFromNode)]
     #[doc = "The `convertPointFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/convertPointFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertPointFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ConvertCoordinateOptions`, `Document`, `DomPoint`, `DomPointInit`, `Element`*"]
     pub fn convert_point_from_node_with_element_and_options(
@@ -2291,7 +2291,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = convertPointFromNode)]
     #[doc = "The `convertPointFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/convertPointFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertPointFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ConvertCoordinateOptions`, `Document`, `DomPoint`, `DomPointInit`*"]
     pub fn convert_point_from_node_with_document_and_options(
@@ -2304,7 +2304,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = convertQuadFromNode)]
     #[doc = "The `convertQuadFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/convertQuadFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertQuadFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`, `DomQuad`, `Text`*"]
     pub fn convert_quad_from_node_with_text(
@@ -2316,7 +2316,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = convertQuadFromNode)]
     #[doc = "The `convertQuadFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/convertQuadFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertQuadFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`, `DomQuad`, `Element`*"]
     pub fn convert_quad_from_node_with_element(
@@ -2328,7 +2328,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = convertQuadFromNode)]
     #[doc = "The `convertQuadFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/convertQuadFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertQuadFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`, `DomQuad`*"]
     pub fn convert_quad_from_node_with_document(
@@ -2344,7 +2344,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = convertQuadFromNode)]
     #[doc = "The `convertQuadFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/convertQuadFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertQuadFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ConvertCoordinateOptions`, `Document`, `DomQuad`, `Text`*"]
     pub fn convert_quad_from_node_with_text_and_options(
@@ -2361,7 +2361,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = convertQuadFromNode)]
     #[doc = "The `convertQuadFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/convertQuadFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertQuadFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ConvertCoordinateOptions`, `Document`, `DomQuad`, `Element`*"]
     pub fn convert_quad_from_node_with_element_and_options(
@@ -2374,7 +2374,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = convertQuadFromNode)]
     #[doc = "The `convertQuadFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/convertQuadFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertQuadFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ConvertCoordinateOptions`, `Document`, `DomQuad`*"]
     pub fn convert_quad_from_node_with_document_and_options(
@@ -2387,7 +2387,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = convertRectFromNode)]
     #[doc = "The `convertRectFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/convertRectFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertRectFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`, `DomQuad`, `DomRectReadOnly`, `Text`*"]
     pub fn convert_rect_from_node_with_text(
@@ -2399,7 +2399,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = convertRectFromNode)]
     #[doc = "The `convertRectFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/convertRectFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertRectFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`, `DomQuad`, `DomRectReadOnly`, `Element`*"]
     pub fn convert_rect_from_node_with_element(
@@ -2411,7 +2411,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = convertRectFromNode)]
     #[doc = "The `convertRectFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/convertRectFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertRectFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`, `DomQuad`, `DomRectReadOnly`*"]
     pub fn convert_rect_from_node_with_document(
@@ -2428,7 +2428,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = convertRectFromNode)]
     #[doc = "The `convertRectFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/convertRectFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertRectFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ConvertCoordinateOptions`, `Document`, `DomQuad`, `DomRectReadOnly`, `Text`*"]
     pub fn convert_rect_from_node_with_text_and_options(
@@ -2446,7 +2446,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = convertRectFromNode)]
     #[doc = "The `convertRectFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/convertRectFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertRectFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ConvertCoordinateOptions`, `Document`, `DomQuad`, `DomRectReadOnly`, `Element`*"]
     pub fn convert_rect_from_node_with_element_and_options(
@@ -2463,7 +2463,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = convertRectFromNode)]
     #[doc = "The `convertRectFromNode()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/convertRectFromNode)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/convertRectFromNode)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ConvertCoordinateOptions`, `Document`, `DomQuad`, `DomRectReadOnly`*"]
     pub fn convert_rect_from_node_with_document_and_options(
@@ -2475,7 +2475,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = getBoxQuads)]
     #[doc = "The `getBoxQuads()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/getBoxQuads)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/getBoxQuads)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn get_box_quads(this: &Document) -> Result<::js_sys::Array, JsValue>;
@@ -2483,7 +2483,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = getBoxQuads)]
     #[doc = "The `getBoxQuads()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/getBoxQuads)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/GeometryUtils/getBoxQuads)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `BoxQuadOptions`, `Document`*"]
     pub fn get_box_quads_with_options(
@@ -2493,28 +2493,28 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , variadic , js_class = "Document" , js_name = append)]
     #[doc = "The `append()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/append)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn append_with_node(this: &Document, nodes: &::js_sys::Array) -> Result<(), JsValue>;
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = append)]
     #[doc = "The `append()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/append)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn append_with_node_0(this: &Document) -> Result<(), JsValue>;
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = append)]
     #[doc = "The `append()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/append)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn append_with_node_1(this: &Document, nodes_1: &Node) -> Result<(), JsValue>;
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = append)]
     #[doc = "The `append()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/append)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn append_with_node_2(
@@ -2525,7 +2525,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = append)]
     #[doc = "The `append()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/append)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn append_with_node_3(
@@ -2537,7 +2537,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = append)]
     #[doc = "The `append()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/append)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn append_with_node_4(
@@ -2550,7 +2550,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = append)]
     #[doc = "The `append()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/append)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn append_with_node_5(
@@ -2564,7 +2564,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = append)]
     #[doc = "The `append()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/append)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn append_with_node_6(
@@ -2579,7 +2579,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = append)]
     #[doc = "The `append()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/append)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn append_with_node_7(
@@ -2595,35 +2595,35 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , variadic , js_class = "Document" , js_name = append)]
     #[doc = "The `append()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/append)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn append_with_str(this: &Document, nodes: &::js_sys::Array) -> Result<(), JsValue>;
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = append)]
     #[doc = "The `append()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/append)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn append_with_str_0(this: &Document) -> Result<(), JsValue>;
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = append)]
     #[doc = "The `append()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/append)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn append_with_str_1(this: &Document, nodes_1: &str) -> Result<(), JsValue>;
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = append)]
     #[doc = "The `append()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/append)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn append_with_str_2(this: &Document, nodes_1: &str, nodes_2: &str) -> Result<(), JsValue>;
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = append)]
     #[doc = "The `append()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/append)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn append_with_str_3(
@@ -2635,7 +2635,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = append)]
     #[doc = "The `append()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/append)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn append_with_str_4(
@@ -2648,7 +2648,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = append)]
     #[doc = "The `append()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/append)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn append_with_str_5(
@@ -2662,7 +2662,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = append)]
     #[doc = "The `append()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/append)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn append_with_str_6(
@@ -2677,7 +2677,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = append)]
     #[doc = "The `append()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/append)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn append_with_str_7(
@@ -2693,28 +2693,28 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , variadic , js_class = "Document" , js_name = prepend)]
     #[doc = "The `prepend()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/prepend)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/prepend)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn prepend_with_node(this: &Document, nodes: &::js_sys::Array) -> Result<(), JsValue>;
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = prepend)]
     #[doc = "The `prepend()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/prepend)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/prepend)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn prepend_with_node_0(this: &Document) -> Result<(), JsValue>;
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = prepend)]
     #[doc = "The `prepend()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/prepend)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/prepend)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn prepend_with_node_1(this: &Document, nodes_1: &Node) -> Result<(), JsValue>;
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = prepend)]
     #[doc = "The `prepend()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/prepend)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/prepend)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn prepend_with_node_2(
@@ -2725,7 +2725,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = prepend)]
     #[doc = "The `prepend()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/prepend)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/prepend)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn prepend_with_node_3(
@@ -2737,7 +2737,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = prepend)]
     #[doc = "The `prepend()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/prepend)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/prepend)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn prepend_with_node_4(
@@ -2750,7 +2750,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = prepend)]
     #[doc = "The `prepend()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/prepend)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/prepend)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn prepend_with_node_5(
@@ -2764,7 +2764,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = prepend)]
     #[doc = "The `prepend()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/prepend)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/prepend)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn prepend_with_node_6(
@@ -2779,7 +2779,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = prepend)]
     #[doc = "The `prepend()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/prepend)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/prepend)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn prepend_with_node_7(
@@ -2795,28 +2795,28 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , variadic , js_class = "Document" , js_name = prepend)]
     #[doc = "The `prepend()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/prepend)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/prepend)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn prepend_with_str(this: &Document, nodes: &::js_sys::Array) -> Result<(), JsValue>;
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = prepend)]
     #[doc = "The `prepend()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/prepend)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/prepend)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn prepend_with_str_0(this: &Document) -> Result<(), JsValue>;
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = prepend)]
     #[doc = "The `prepend()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/prepend)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/prepend)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn prepend_with_str_1(this: &Document, nodes_1: &str) -> Result<(), JsValue>;
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = prepend)]
     #[doc = "The `prepend()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/prepend)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/prepend)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn prepend_with_str_2(this: &Document, nodes_1: &str, nodes_2: &str)
@@ -2824,7 +2824,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = prepend)]
     #[doc = "The `prepend()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/prepend)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/prepend)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn prepend_with_str_3(
@@ -2836,7 +2836,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = prepend)]
     #[doc = "The `prepend()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/prepend)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/prepend)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn prepend_with_str_4(
@@ -2849,7 +2849,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = prepend)]
     #[doc = "The `prepend()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/prepend)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/prepend)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn prepend_with_str_5(
@@ -2863,7 +2863,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = prepend)]
     #[doc = "The `prepend()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/prepend)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/prepend)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn prepend_with_str_6(
@@ -2878,7 +2878,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = prepend)]
     #[doc = "The `prepend()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/prepend)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/prepend)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn prepend_with_str_7(
@@ -2894,35 +2894,35 @@ extern "C" {
     # [wasm_bindgen (method , structural , variadic , js_class = "Document" , js_name = replaceChildren)]
     #[doc = "The `replaceChildren()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/replaceChildren)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/replaceChildren)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn replace_children_with_node(this: &Document, nodes: &::js_sys::Array);
     # [wasm_bindgen (method , structural , js_class = "Document" , js_name = replaceChildren)]
     #[doc = "The `replaceChildren()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/replaceChildren)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/replaceChildren)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn replace_children_with_node_0(this: &Document);
     # [wasm_bindgen (method , structural , js_class = "Document" , js_name = replaceChildren)]
     #[doc = "The `replaceChildren()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/replaceChildren)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/replaceChildren)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn replace_children_with_node_1(this: &Document, nodes_1: &Node);
     # [wasm_bindgen (method , structural , js_class = "Document" , js_name = replaceChildren)]
     #[doc = "The `replaceChildren()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/replaceChildren)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/replaceChildren)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn replace_children_with_node_2(this: &Document, nodes_1: &Node, nodes_2: &Node);
     # [wasm_bindgen (method , structural , js_class = "Document" , js_name = replaceChildren)]
     #[doc = "The `replaceChildren()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/replaceChildren)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/replaceChildren)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn replace_children_with_node_3(
@@ -2934,7 +2934,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "Document" , js_name = replaceChildren)]
     #[doc = "The `replaceChildren()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/replaceChildren)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/replaceChildren)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn replace_children_with_node_4(
@@ -2947,7 +2947,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "Document" , js_name = replaceChildren)]
     #[doc = "The `replaceChildren()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/replaceChildren)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/replaceChildren)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn replace_children_with_node_5(
@@ -2961,7 +2961,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "Document" , js_name = replaceChildren)]
     #[doc = "The `replaceChildren()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/replaceChildren)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/replaceChildren)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn replace_children_with_node_6(
@@ -2976,7 +2976,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "Document" , js_name = replaceChildren)]
     #[doc = "The `replaceChildren()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/replaceChildren)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/replaceChildren)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn replace_children_with_node_7(
@@ -2992,35 +2992,35 @@ extern "C" {
     # [wasm_bindgen (method , structural , variadic , js_class = "Document" , js_name = replaceChildren)]
     #[doc = "The `replaceChildren()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/replaceChildren)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/replaceChildren)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn replace_children_with_str(this: &Document, nodes: &::js_sys::Array);
     # [wasm_bindgen (method , structural , js_class = "Document" , js_name = replaceChildren)]
     #[doc = "The `replaceChildren()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/replaceChildren)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/replaceChildren)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn replace_children_with_str_0(this: &Document);
     # [wasm_bindgen (method , structural , js_class = "Document" , js_name = replaceChildren)]
     #[doc = "The `replaceChildren()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/replaceChildren)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/replaceChildren)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn replace_children_with_str_1(this: &Document, nodes_1: &str);
     # [wasm_bindgen (method , structural , js_class = "Document" , js_name = replaceChildren)]
     #[doc = "The `replaceChildren()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/replaceChildren)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/replaceChildren)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn replace_children_with_str_2(this: &Document, nodes_1: &str, nodes_2: &str);
     # [wasm_bindgen (method , structural , js_class = "Document" , js_name = replaceChildren)]
     #[doc = "The `replaceChildren()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/replaceChildren)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/replaceChildren)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn replace_children_with_str_3(
@@ -3032,7 +3032,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "Document" , js_name = replaceChildren)]
     #[doc = "The `replaceChildren()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/replaceChildren)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/replaceChildren)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn replace_children_with_str_4(
@@ -3045,7 +3045,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "Document" , js_name = replaceChildren)]
     #[doc = "The `replaceChildren()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/replaceChildren)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/replaceChildren)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn replace_children_with_str_5(
@@ -3059,7 +3059,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "Document" , js_name = replaceChildren)]
     #[doc = "The `replaceChildren()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/replaceChildren)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/replaceChildren)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn replace_children_with_str_6(
@@ -3074,7 +3074,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "Document" , js_name = replaceChildren)]
     #[doc = "The `replaceChildren()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/replaceChildren)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/replaceChildren)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn replace_children_with_str_7(
@@ -3091,7 +3091,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = createExpression)]
     #[doc = "The `createExpression()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/createExpression)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/XPathEvaluator/createExpression)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`, `XPathExpression`*"]
     pub fn create_expression(this: &Document, expression: &str)
@@ -3100,7 +3100,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = createExpression)]
     #[doc = "The `createExpression()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/createExpression)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/XPathEvaluator/createExpression)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`, `XPathExpression`*"]
     pub fn create_expression_with_opt_callback(
@@ -3112,7 +3112,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = createExpression)]
     #[doc = "The `createExpression()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/createExpression)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/XPathEvaluator/createExpression)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`, `XPathExpression`, `XPathNsResolver`*"]
     pub fn create_expression_with_opt_x_path_ns_resolver(
@@ -3123,7 +3123,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "Document" , js_name = createNSResolver)]
     #[doc = "The `createNSResolver()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/createNSResolver)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/XPathEvaluator/createNSResolver)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`*"]
     pub fn create_ns_resolver(this: &Document, node_resolver: &Node) -> Node;
@@ -3131,7 +3131,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = evaluate)]
     #[doc = "The `evaluate()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/evaluate)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/XPathEvaluator/evaluate)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`, `XPathResult`*"]
     pub fn evaluate(
@@ -3143,7 +3143,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = evaluate)]
     #[doc = "The `evaluate()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/evaluate)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/XPathEvaluator/evaluate)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`, `XPathResult`*"]
     pub fn evaluate_with_opt_callback(
@@ -3156,7 +3156,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = evaluate)]
     #[doc = "The `evaluate()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/evaluate)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/XPathEvaluator/evaluate)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`, `XPathNsResolver`, `XPathResult`*"]
     pub fn evaluate_with_opt_x_path_ns_resolver(
@@ -3169,7 +3169,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = evaluate)]
     #[doc = "The `evaluate()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/evaluate)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/XPathEvaluator/evaluate)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`, `XPathResult`*"]
     pub fn evaluate_with_opt_callback_and_type(
@@ -3183,7 +3183,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = evaluate)]
     #[doc = "The `evaluate()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/evaluate)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/XPathEvaluator/evaluate)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`, `XPathNsResolver`, `XPathResult`*"]
     pub fn evaluate_with_opt_x_path_ns_resolver_and_type(
@@ -3197,7 +3197,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = evaluate)]
     #[doc = "The `evaluate()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/evaluate)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/XPathEvaluator/evaluate)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`, `XPathResult`*"]
     pub fn evaluate_with_opt_callback_and_type_and_result(
@@ -3212,7 +3212,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Document" , js_name = evaluate)]
     #[doc = "The `evaluate()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document/evaluate)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/XPathEvaluator/evaluate)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Document`, `XPathNsResolver`, `XPathResult`*"]
     pub fn evaluate_with_opt_x_path_ns_resolver_and_type_and_result(

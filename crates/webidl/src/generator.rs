@@ -383,6 +383,7 @@ pub enum InterfaceMethodKind {
 
 pub struct InterfaceMethod<'a> {
     pub name: Ident,
+    pub included_class: Option<&'a str>,
     pub js_name: String,
     pub deprecated: Option<Option<String>>,
     pub arguments: Vec<(Ident, IdlType<'a>, Type)>,
@@ -407,6 +408,7 @@ impl InterfaceMethod<'_> {
     ) -> TokenStream {
         let InterfaceMethod {
             name,
+            included_class,
             js_name,
             deprecated,
             arguments,
@@ -427,6 +429,8 @@ impl InterfaceMethod<'_> {
 
         let mut extra_args = vec![quote!( js_class = #parent_js_name )];
 
+        let doc_class = included_class.unwrap_or(&parent_js_name);
+
         let doc_comment = match kind {
             InterfaceMethodKind::Constructor(name) => {
                 is_constructor = true;
@@ -437,7 +441,7 @@ impl InterfaceMethod<'_> {
                     "The `new {}(..)` constructor, creating a new \
                      instance of `{0}`.\n\n{}",
                     parent_name,
-                    mdn_doc(&parent_js_name, Some(&parent_js_name))
+                    mdn_doc(doc_class, Some(&parent_js_name))
                 )
             }
             InterfaceMethodKind::Regular => {
@@ -453,7 +457,7 @@ impl InterfaceMethod<'_> {
                 format!(
                     "The `{}()` method.\n\n{}",
                     js_name,
-                    mdn_doc(&parent_js_name, Some(method))
+                    mdn_doc(doc_class, Some(method))
                 )
             }
             InterfaceMethodKind::IndexingGetter => {

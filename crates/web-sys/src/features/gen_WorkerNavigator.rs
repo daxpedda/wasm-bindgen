@@ -180,7 +180,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "WorkerNavigator" , js_name = taintEnabled)]
     #[doc = "The `taintEnabled()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WorkerNavigator/taintEnabled)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/NavigatorID/taintEnabled)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `WorkerNavigator`*"]
     pub fn taint_enabled(this: &WorkerNavigator) -> bool;

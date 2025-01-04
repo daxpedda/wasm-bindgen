@@ -228,6 +228,7 @@ impl<'src> FirstPassRecord<'src> {
     pub fn create_imports(
         &self,
         type_name: Option<&str>,
+        included_class: Option<&'src str>,
         container_attrs: Option<&ExtendedAttributeList<'src>>,
         id: &'src OperationId<'src>,
         data: &'src OperationData<'src>,
@@ -531,6 +532,7 @@ impl<'src> FirstPassRecord<'src> {
 
                     ret.push(InterfaceMethod {
                         name: rust_ident(&rust_name),
+                        included_class,
                         js_name: js_name.to_string(),
                         deprecated: deprecated.clone(),
                         arguments,
@@ -578,6 +580,7 @@ impl<'src> FirstPassRecord<'src> {
 
                         ret.push(InterfaceMethod {
                             name: rust_ident(&rust_name),
+                            included_class,
                             js_name: js_name.to_string(),
                             deprecated: deprecated.clone(),
                             arguments,

@@ -114,14 +114,14 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "ShadowRoot" , js_name = elementFromPoint)]
     #[doc = "The `elementFromPoint()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot/elementFromPoint)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/DocumentOrShadowRoot/elementFromPoint)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Element`, `ShadowRoot`*"]
     pub fn element_from_point(this: &ShadowRoot, x: f32, y: f32) -> Option<Element>;
     # [wasm_bindgen (method , structural , js_class = "ShadowRoot" , js_name = elementsFromPoint)]
     #[doc = "The `elementsFromPoint()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot/elementsFromPoint)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/DocumentOrShadowRoot/elementsFromPoint)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ShadowRoot`*"]
     pub fn elements_from_point(this: &ShadowRoot, x: f32, y: f32) -> ::js_sys::Array;

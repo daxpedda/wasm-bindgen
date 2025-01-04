@@ -2465,14 +2465,14 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = cancelAnimationFrame)]
     #[doc = "The `cancelAnimationFrame()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/cancelAnimationFrame)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/AnimationFrameProvider/cancelAnimationFrame)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn cancel_animation_frame(this: &Window, handle: i32) -> Result<(), JsValue>;
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = requestAnimationFrame)]
     #[doc = "The `requestAnimationFrame()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/AnimationFrameProvider/requestAnimationFrame)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn request_animation_frame(
@@ -2482,42 +2482,42 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = atob)]
     #[doc = "The `atob()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/atob)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/atob)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn atob(this: &Window, atob: &str) -> Result<::alloc::string::String, JsValue>;
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = btoa)]
     #[doc = "The `btoa()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/btoa)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/btoa)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn btoa(this: &Window, btoa: &str) -> Result<::alloc::string::String, JsValue>;
     # [wasm_bindgen (method , structural , js_class = "Window" , js_name = clearInterval)]
     #[doc = "The `clearInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/clearInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn clear_interval(this: &Window);
     # [wasm_bindgen (method , structural , js_class = "Window" , js_name = clearInterval)]
     #[doc = "The `clearInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/clearInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn clear_interval_with_handle(this: &Window, handle: i32);
     # [wasm_bindgen (method , structural , js_class = "Window" , js_name = clearTimeout)]
     #[doc = "The `clearTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/clearTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn clear_timeout(this: &Window);
     # [wasm_bindgen (method , structural , js_class = "Window" , js_name = clearTimeout)]
     #[doc = "The `clearTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/clearTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn clear_timeout_with_handle(this: &Window, handle: i32);
@@ -2525,7 +2525,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlImageElement`, `Window`*"]
     pub fn create_image_bitmap_with_html_image_element(
@@ -2536,7 +2536,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `SvgImageElement`, `Window`*"]
     pub fn create_image_bitmap_with_svg_image_element(
@@ -2547,7 +2547,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlCanvasElement`, `Window`*"]
     pub fn create_image_bitmap_with_html_canvas_element(
@@ -2558,7 +2558,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlVideoElement`, `Window`*"]
     pub fn create_image_bitmap_with_html_video_element(
@@ -2569,7 +2569,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageBitmap`, `Window`*"]
     pub fn create_image_bitmap_with_image_bitmap(
@@ -2580,7 +2580,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvas`, `Window`*"]
     pub fn create_image_bitmap_with_offscreen_canvas(
@@ -2592,7 +2592,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `VideoFrame`, `Window`*"]
     #[doc = ""]
@@ -2606,7 +2606,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Blob`, `Window`*"]
     pub fn create_image_bitmap_with_blob(
@@ -2617,7 +2617,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageData`, `Window`*"]
     pub fn create_image_bitmap_with_image_data(
@@ -2628,7 +2628,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlImageElement`, `ImageBitmapOptions`, `Window`*"]
     pub fn create_image_bitmap_with_html_image_element_and_image_bitmap_options(
@@ -2640,7 +2640,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageBitmapOptions`, `SvgImageElement`, `Window`*"]
     pub fn create_image_bitmap_with_svg_image_element_and_image_bitmap_options(
@@ -2652,7 +2652,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlCanvasElement`, `ImageBitmapOptions`, `Window`*"]
     pub fn create_image_bitmap_with_html_canvas_element_and_image_bitmap_options(
@@ -2664,7 +2664,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlVideoElement`, `ImageBitmapOptions`, `Window`*"]
     pub fn create_image_bitmap_with_html_video_element_and_image_bitmap_options(
@@ -2676,7 +2676,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageBitmap`, `ImageBitmapOptions`, `Window`*"]
     pub fn create_image_bitmap_with_image_bitmap_and_image_bitmap_options(
@@ -2688,7 +2688,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageBitmapOptions`, `OffscreenCanvas`, `Window`*"]
     pub fn create_image_bitmap_with_offscreen_canvas_and_image_bitmap_options(
@@ -2701,7 +2701,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageBitmapOptions`, `VideoFrame`, `Window`*"]
     #[doc = ""]
@@ -2716,7 +2716,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Blob`, `ImageBitmapOptions`, `Window`*"]
     pub fn create_image_bitmap_with_blob_and_image_bitmap_options(
@@ -2728,7 +2728,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageBitmapOptions`, `ImageData`, `Window`*"]
     pub fn create_image_bitmap_with_image_data_and_image_bitmap_options(
@@ -2740,7 +2740,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlImageElement`, `Window`*"]
     pub fn create_image_bitmap_with_html_image_element_and_a_sx_and_a_sy_and_a_sw_and_a_sh(
@@ -2755,7 +2755,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `SvgImageElement`, `Window`*"]
     pub fn create_image_bitmap_with_svg_image_element_and_a_sx_and_a_sy_and_a_sw_and_a_sh(
@@ -2770,7 +2770,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlCanvasElement`, `Window`*"]
     pub fn create_image_bitmap_with_html_canvas_element_and_a_sx_and_a_sy_and_a_sw_and_a_sh(
@@ -2785,7 +2785,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlVideoElement`, `Window`*"]
     pub fn create_image_bitmap_with_html_video_element_and_a_sx_and_a_sy_and_a_sw_and_a_sh(
@@ -2800,7 +2800,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageBitmap`, `Window`*"]
     pub fn create_image_bitmap_with_image_bitmap_and_a_sx_and_a_sy_and_a_sw_and_a_sh(
@@ -2815,7 +2815,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvas`, `Window`*"]
     pub fn create_image_bitmap_with_offscreen_canvas_and_a_sx_and_a_sy_and_a_sw_and_a_sh(
@@ -2831,7 +2831,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `VideoFrame`, `Window`*"]
     #[doc = ""]
@@ -2849,7 +2849,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Blob`, `Window`*"]
     pub fn create_image_bitmap_with_blob_and_a_sx_and_a_sy_and_a_sw_and_a_sh(
@@ -2864,7 +2864,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageData`, `Window`*"]
     pub fn create_image_bitmap_with_image_data_and_a_sx_and_a_sy_and_a_sw_and_a_sh(
@@ -2879,7 +2879,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlImageElement`, `ImageBitmapOptions`, `Window`*"]
     pub fn create_image_bitmap_with_html_image_element_and_a_sx_and_a_sy_and_a_sw_and_a_sh_and_a_options(
@@ -2895,7 +2895,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageBitmapOptions`, `SvgImageElement`, `Window`*"]
     pub fn create_image_bitmap_with_svg_image_element_and_a_sx_and_a_sy_and_a_sw_and_a_sh_and_a_options(
@@ -2911,7 +2911,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlCanvasElement`, `ImageBitmapOptions`, `Window`*"]
     pub fn create_image_bitmap_with_html_canvas_element_and_a_sx_and_a_sy_and_a_sw_and_a_sh_and_a_options(
@@ -2927,7 +2927,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlVideoElement`, `ImageBitmapOptions`, `Window`*"]
     pub fn create_image_bitmap_with_html_video_element_and_a_sx_and_a_sy_and_a_sw_and_a_sh_and_a_options(
@@ -2943,7 +2943,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageBitmap`, `ImageBitmapOptions`, `Window`*"]
     pub fn create_image_bitmap_with_image_bitmap_and_a_sx_and_a_sy_and_a_sw_and_a_sh_and_a_options(
@@ -2959,7 +2959,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageBitmapOptions`, `OffscreenCanvas`, `Window`*"]
     pub fn create_image_bitmap_with_offscreen_canvas_and_a_sx_and_a_sy_and_a_sw_and_a_sh_and_a_options(
@@ -2976,7 +2976,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageBitmapOptions`, `VideoFrame`, `Window`*"]
     #[doc = ""]
@@ -2995,7 +2995,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Blob`, `ImageBitmapOptions`, `Window`*"]
     pub fn create_image_bitmap_with_blob_and_a_sx_and_a_sy_and_a_sw_and_a_sh_and_a_options(
@@ -3011,7 +3011,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = createImageBitmap)]
     #[doc = "The `createImageBitmap()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/createImageBitmap)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageBitmapOptions`, `ImageData`, `Window`*"]
     pub fn create_image_bitmap_with_image_data_and_a_sx_and_a_sy_and_a_sw_and_a_sh_and_a_options(
@@ -3027,14 +3027,14 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "Window" , js_name = fetch)]
     #[doc = "The `fetch()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/fetch)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Request`, `Window`*"]
     pub fn fetch_with_request(this: &Window, input: &Request) -> ::js_sys::Promise;
     # [wasm_bindgen (method , structural , js_class = "Window" , js_name = fetch)]
     #[doc = "The `fetch()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/fetch)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn fetch_with_str(this: &Window, input: &str) -> ::js_sys::Promise;
@@ -3042,7 +3042,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "Window" , js_name = fetch)]
     #[doc = "The `fetch()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/fetch)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Request`, `RequestInit`, `Window`*"]
     pub fn fetch_with_request_and_init(
@@ -3054,7 +3054,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "Window" , js_name = fetch)]
     #[doc = "The `fetch()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/fetch)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `RequestInit`, `Window`*"]
     pub fn fetch_with_str_and_init(
@@ -3065,14 +3065,14 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "Window" , js_name = queueMicrotask)]
     #[doc = "The `queueMicrotask()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/queueMicrotask)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/queueMicrotask)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn queue_microtask(this: &Window, callback: &::js_sys::Function);
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_interval_with_callback(
@@ -3082,7 +3082,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , variadic , js_class = "Window" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_interval_with_callback_and_timeout_and_arguments(
@@ -3094,7 +3094,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_interval_with_callback_and_timeout_and_arguments_0(
@@ -3105,7 +3105,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_interval_with_callback_and_timeout_and_arguments_1(
@@ -3117,7 +3117,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_interval_with_callback_and_timeout_and_arguments_2(
@@ -3130,7 +3130,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_interval_with_callback_and_timeout_and_arguments_3(
@@ -3144,7 +3144,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_interval_with_callback_and_timeout_and_arguments_4(
@@ -3159,7 +3159,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_interval_with_callback_and_timeout_and_arguments_5(
@@ -3175,7 +3175,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_interval_with_callback_and_timeout_and_arguments_6(
@@ -3192,7 +3192,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_interval_with_callback_and_timeout_and_arguments_7(
@@ -3210,14 +3210,14 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_interval_with_str(this: &Window, handler: &str) -> Result<i32, JsValue>;
     # [wasm_bindgen (catch , method , structural , variadic , js_class = "Window" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_interval_with_str_and_timeout_and_unused(
@@ -3229,7 +3229,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_interval_with_str_and_timeout_and_unused_0(
@@ -3240,7 +3240,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_interval_with_str_and_timeout_and_unused_1(
@@ -3252,7 +3252,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_interval_with_str_and_timeout_and_unused_2(
@@ -3265,7 +3265,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_interval_with_str_and_timeout_and_unused_3(
@@ -3279,7 +3279,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_interval_with_str_and_timeout_and_unused_4(
@@ -3294,7 +3294,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_interval_with_str_and_timeout_and_unused_5(
@@ -3310,7 +3310,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_interval_with_str_and_timeout_and_unused_6(
@@ -3327,7 +3327,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setInterval)]
     #[doc = "The `setInterval()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_interval_with_str_and_timeout_and_unused_7(
@@ -3345,7 +3345,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_timeout_with_callback(
@@ -3355,7 +3355,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , variadic , js_class = "Window" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_timeout_with_callback_and_timeout_and_arguments(
@@ -3367,7 +3367,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_timeout_with_callback_and_timeout_and_arguments_0(
@@ -3378,7 +3378,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_timeout_with_callback_and_timeout_and_arguments_1(
@@ -3390,7 +3390,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_timeout_with_callback_and_timeout_and_arguments_2(
@@ -3403,7 +3403,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_timeout_with_callback_and_timeout_and_arguments_3(
@@ -3417,7 +3417,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_timeout_with_callback_and_timeout_and_arguments_4(
@@ -3432,7 +3432,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_timeout_with_callback_and_timeout_and_arguments_5(
@@ -3448,7 +3448,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_timeout_with_callback_and_timeout_and_arguments_6(
@@ -3465,7 +3465,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_timeout_with_callback_and_timeout_and_arguments_7(
@@ -3483,14 +3483,14 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_timeout_with_str(this: &Window, handler: &str) -> Result<i32, JsValue>;
     # [wasm_bindgen (catch , method , structural , variadic , js_class = "Window" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_timeout_with_str_and_timeout_and_unused(
@@ -3502,7 +3502,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_timeout_with_str_and_timeout_and_unused_0(
@@ -3513,7 +3513,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_timeout_with_str_and_timeout_and_unused_1(
@@ -3525,7 +3525,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_timeout_with_str_and_timeout_and_unused_2(
@@ -3538,7 +3538,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_timeout_with_str_and_timeout_and_unused_3(
@@ -3552,7 +3552,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_timeout_with_str_and_timeout_and_unused_4(
@@ -3567,7 +3567,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_timeout_with_str_and_timeout_and_unused_5(
@@ -3583,7 +3583,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_timeout_with_str_and_timeout_and_unused_6(
@@ -3600,7 +3600,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Window" , js_name = setTimeout)]
     #[doc = "The `setTimeout()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Window`*"]
     pub fn set_timeout_with_str_and_timeout_and_unused_7(

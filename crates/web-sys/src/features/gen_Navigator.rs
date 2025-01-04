@@ -547,7 +547,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Navigator" , js_name = registerContentHandler)]
     #[doc = "The `registerContentHandler()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/registerContentHandler)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/NavigatorContentUtils/registerContentHandler)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Navigator`*"]
     pub fn register_content_handler(
@@ -559,7 +559,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "Navigator" , js_name = registerProtocolHandler)]
     #[doc = "The `registerProtocolHandler()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/registerProtocolHandler)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/NavigatorContentUtils/registerProtocolHandler)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Navigator`*"]
     pub fn register_protocol_handler(
@@ -571,7 +571,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "Navigator" , js_name = taintEnabled)]
     #[doc = "The `taintEnabled()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/taintEnabled)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/NavigatorID/taintEnabled)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Navigator`*"]
     pub fn taint_enabled(this: &Navigator) -> bool;

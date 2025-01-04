@@ -106,7 +106,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "DedicatedWorkerGlobalScope" , js_name = cancelAnimationFrame)]
     #[doc = "The `cancelAnimationFrame()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/DedicatedWorkerGlobalScope/cancelAnimationFrame)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/AnimationFrameProvider/cancelAnimationFrame)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `DedicatedWorkerGlobalScope`*"]
     pub fn cancel_animation_frame(
@@ -116,7 +116,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "DedicatedWorkerGlobalScope" , js_name = requestAnimationFrame)]
     #[doc = "The `requestAnimationFrame()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/DedicatedWorkerGlobalScope/requestAnimationFrame)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/AnimationFrameProvider/requestAnimationFrame)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `DedicatedWorkerGlobalScope`*"]
     pub fn request_animation_frame(

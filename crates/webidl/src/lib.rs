@@ -560,7 +560,7 @@ impl<'src> FirstPassRecord<'src> {
             }
         }
 
-        for x in self.create_imports(None, None, id, data, false, &HashSet::new()) {
+        for x in self.create_imports(None, None, None, id, data, false, &HashSet::new()) {
             functions.push(Function {
                 name: x.name,
                 js_name: x.js_name,
@@ -650,6 +650,7 @@ impl<'src> FirstPassRecord<'src> {
         for (id, op_data) in data.operations.iter() {
             self.member_operation(
                 &name.to_string(),
+                None,
                 &mut methods,
                 data,
                 id,
@@ -658,12 +659,12 @@ impl<'src> FirstPassRecord<'src> {
             );
         }
 
-        for mixin_data in self.all_mixins(&js_name) {
-            for member in &mixin_data.consts {
+        for mixin in self.all_mixins(&js_name) {
+            for member in &mixin.data.consts {
                 self.append_interface_const(&mut consts, member, unstable);
             }
 
-            for member in &mixin_data.attributes {
+            for member in &mixin.data.attributes {
                 let unstable = unstable || member.stability.is_unstable();
                 let member = member.definition;
                 self.member_attribute(
@@ -681,9 +682,10 @@ impl<'src> FirstPassRecord<'src> {
                 );
             }
 
-            for (id, op_data) in mixin_data.operations.iter() {
+            for (id, op_data) in mixin.data.operations.iter() {
                 self.member_operation(
                     &name.to_string(),
+                    mixin.included_class,
                     &mut methods,
                     data,
                     id,
@@ -821,6 +823,7 @@ impl<'src> FirstPassRecord<'src> {
     fn member_operation(
         &'src self,
         type_name: &str,
+        included_class: Option<&'src str>,
         methods: &mut Vec<InterfaceMethod<'src>>,
         data: &InterfaceData<'src>,
         id: &'src OperationId<'src>,
@@ -832,6 +835,7 @@ impl<'src> FirstPassRecord<'src> {
 
         for method in self.create_imports(
             Some(type_name),
+            included_class,
             attrs,
             id,
             op_data,

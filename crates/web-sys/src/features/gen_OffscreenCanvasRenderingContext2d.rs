@@ -347,7 +347,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = drawImage)]
     #[doc = "The `drawImage()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/drawImage)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawImage/drawImage)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlImageElement`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn draw_image_with_html_image_element(
@@ -360,7 +360,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = drawImage)]
     #[doc = "The `drawImage()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/drawImage)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawImage/drawImage)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`, `SvgImageElement`*"]
     pub fn draw_image_with_svg_image_element(
@@ -373,7 +373,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = drawImage)]
     #[doc = "The `drawImage()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/drawImage)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawImage/drawImage)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlCanvasElement`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn draw_image_with_html_canvas_element(
@@ -386,7 +386,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = drawImage)]
     #[doc = "The `drawImage()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/drawImage)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawImage/drawImage)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlVideoElement`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn draw_image_with_html_video_element(
@@ -399,7 +399,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = drawImage)]
     #[doc = "The `drawImage()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/drawImage)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawImage/drawImage)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageBitmap`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn draw_image_with_image_bitmap(
@@ -412,7 +412,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = drawImage)]
     #[doc = "The `drawImage()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/drawImage)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawImage/drawImage)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvas`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn draw_image_with_offscreen_canvas(
@@ -426,7 +426,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = drawImage)]
     #[doc = "The `drawImage()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/drawImage)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawImage/drawImage)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`, `VideoFrame`*"]
     #[doc = ""]
@@ -442,7 +442,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = drawImage)]
     #[doc = "The `drawImage()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/drawImage)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawImage/drawImage)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlImageElement`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn draw_image_with_html_image_element_and_dw_and_dh(
@@ -457,7 +457,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = drawImage)]
     #[doc = "The `drawImage()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/drawImage)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawImage/drawImage)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`, `SvgImageElement`*"]
     pub fn draw_image_with_svg_image_element_and_dw_and_dh(
@@ -472,7 +472,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = drawImage)]
     #[doc = "The `drawImage()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/drawImage)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawImage/drawImage)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlCanvasElement`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn draw_image_with_html_canvas_element_and_dw_and_dh(
@@ -487,7 +487,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = drawImage)]
     #[doc = "The `drawImage()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/drawImage)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawImage/drawImage)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlVideoElement`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn draw_image_with_html_video_element_and_dw_and_dh(
@@ -502,7 +502,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = drawImage)]
     #[doc = "The `drawImage()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/drawImage)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawImage/drawImage)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageBitmap`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn draw_image_with_image_bitmap_and_dw_and_dh(
@@ -517,7 +517,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = drawImage)]
     #[doc = "The `drawImage()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/drawImage)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawImage/drawImage)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvas`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn draw_image_with_offscreen_canvas_and_dw_and_dh(
@@ -533,7 +533,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = drawImage)]
     #[doc = "The `drawImage()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/drawImage)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawImage/drawImage)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`, `VideoFrame`*"]
     #[doc = ""]
@@ -551,7 +551,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = drawImage)]
     #[doc = "The `drawImage()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/drawImage)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawImage/drawImage)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlImageElement`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn draw_image_with_html_image_element_and_sw_and_sh_and_dx_and_dy_and_dw_and_dh(
@@ -570,7 +570,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = drawImage)]
     #[doc = "The `drawImage()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/drawImage)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawImage/drawImage)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`, `SvgImageElement`*"]
     pub fn draw_image_with_svg_image_element_and_sw_and_sh_and_dx_and_dy_and_dw_and_dh(
@@ -589,7 +589,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = drawImage)]
     #[doc = "The `drawImage()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/drawImage)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawImage/drawImage)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlCanvasElement`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn draw_image_with_html_canvas_element_and_sw_and_sh_and_dx_and_dy_and_dw_and_dh(
@@ -608,7 +608,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = drawImage)]
     #[doc = "The `drawImage()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/drawImage)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawImage/drawImage)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `HtmlVideoElement`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn draw_image_with_html_video_element_and_sw_and_sh_and_dx_and_dy_and_dw_and_dh(
@@ -627,7 +627,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = drawImage)]
     #[doc = "The `drawImage()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/drawImage)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawImage/drawImage)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageBitmap`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn draw_image_with_image_bitmap_and_sw_and_sh_and_dx_and_dy_and_dw_and_dh(
@@ -646,7 +646,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = drawImage)]
     #[doc = "The `drawImage()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/drawImage)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawImage/drawImage)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvas`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn draw_image_with_offscreen_canvas_and_sw_and_sh_and_dx_and_dy_and_dw_and_dh(
@@ -666,7 +666,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = drawImage)]
     #[doc = "The `drawImage()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/drawImage)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawImage/drawImage)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`, `VideoFrame`*"]
     #[doc = ""]
@@ -687,14 +687,14 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = beginPath)]
     #[doc = "The `beginPath()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/beginPath)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawPath/beginPath)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn begin_path(this: &OffscreenCanvasRenderingContext2d);
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = clip)]
     #[doc = "The `clip()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/clip)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawPath/clip)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn clip(this: &OffscreenCanvasRenderingContext2d);
@@ -702,7 +702,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = clip)]
     #[doc = "The `clip()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/clip)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawPath/clip)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `CanvasWindingRule`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn clip_with_canvas_winding_rule(
@@ -713,7 +713,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = clip)]
     #[doc = "The `clip()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/clip)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawPath/clip)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`, `Path2d`*"]
     pub fn clip_with_path_2d(this: &OffscreenCanvasRenderingContext2d, path: &Path2d);
@@ -721,7 +721,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = clip)]
     #[doc = "The `clip()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/clip)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawPath/clip)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `CanvasWindingRule`, `OffscreenCanvasRenderingContext2d`, `Path2d`*"]
     pub fn clip_with_path_2d_and_winding(
@@ -732,7 +732,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = fill)]
     #[doc = "The `fill()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/fill)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawPath/fill)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn fill(this: &OffscreenCanvasRenderingContext2d);
@@ -740,7 +740,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = fill)]
     #[doc = "The `fill()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/fill)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawPath/fill)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `CanvasWindingRule`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn fill_with_canvas_winding_rule(
@@ -751,7 +751,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = fill)]
     #[doc = "The `fill()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/fill)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawPath/fill)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`, `Path2d`*"]
     pub fn fill_with_path_2d(this: &OffscreenCanvasRenderingContext2d, path: &Path2d);
@@ -759,7 +759,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = fill)]
     #[doc = "The `fill()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/fill)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawPath/fill)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `CanvasWindingRule`, `OffscreenCanvasRenderingContext2d`, `Path2d`*"]
     pub fn fill_with_path_2d_and_winding(
@@ -770,7 +770,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = isPointInPath)]
     #[doc = "The `isPointInPath()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/isPointInPath)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawPath/isPointInPath)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn is_point_in_path_with_f64(
@@ -782,7 +782,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = isPointInPath)]
     #[doc = "The `isPointInPath()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/isPointInPath)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawPath/isPointInPath)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `CanvasWindingRule`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn is_point_in_path_with_f64_and_canvas_winding_rule(
@@ -795,7 +795,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = isPointInPath)]
     #[doc = "The `isPointInPath()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/isPointInPath)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawPath/isPointInPath)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`, `Path2d`*"]
     pub fn is_point_in_path_with_path_2d_and_f64(
@@ -808,7 +808,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = isPointInPath)]
     #[doc = "The `isPointInPath()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/isPointInPath)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawPath/isPointInPath)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `CanvasWindingRule`, `OffscreenCanvasRenderingContext2d`, `Path2d`*"]
     pub fn is_point_in_path_with_path_2d_and_f64_and_winding(
@@ -821,7 +821,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = isPointInStroke)]
     #[doc = "The `isPointInStroke()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/isPointInStroke)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawPath/isPointInStroke)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn is_point_in_stroke_with_x_and_y(
@@ -833,7 +833,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = isPointInStroke)]
     #[doc = "The `isPointInStroke()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/isPointInStroke)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawPath/isPointInStroke)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`, `Path2d`*"]
     pub fn is_point_in_stroke_with_path_and_x_and_y(
@@ -845,7 +845,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = stroke)]
     #[doc = "The `stroke()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/stroke)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawPath/stroke)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn stroke(this: &OffscreenCanvasRenderingContext2d);
@@ -853,7 +853,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = stroke)]
     #[doc = "The `stroke()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/stroke)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasDrawPath/stroke)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`, `Path2d`*"]
     pub fn stroke_with_path(this: &OffscreenCanvasRenderingContext2d, path: &Path2d);
@@ -861,7 +861,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = createLinearGradient)]
     #[doc = "The `createLinearGradient()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/createLinearGradient)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasFillStrokeStyles/createLinearGradient)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `CanvasGradient`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn create_linear_gradient(
@@ -875,7 +875,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = createPattern)]
     #[doc = "The `createPattern()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/createPattern)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasFillStrokeStyles/createPattern)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `CanvasPattern`, `HtmlImageElement`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn create_pattern_with_html_image_element(
@@ -887,7 +887,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = createPattern)]
     #[doc = "The `createPattern()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/createPattern)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasFillStrokeStyles/createPattern)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `CanvasPattern`, `OffscreenCanvasRenderingContext2d`, `SvgImageElement`*"]
     pub fn create_pattern_with_svg_image_element(
@@ -899,7 +899,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = createPattern)]
     #[doc = "The `createPattern()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/createPattern)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasFillStrokeStyles/createPattern)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `CanvasPattern`, `HtmlCanvasElement`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn create_pattern_with_html_canvas_element(
@@ -911,7 +911,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = createPattern)]
     #[doc = "The `createPattern()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/createPattern)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasFillStrokeStyles/createPattern)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `CanvasPattern`, `HtmlVideoElement`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn create_pattern_with_html_video_element(
@@ -923,7 +923,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = createPattern)]
     #[doc = "The `createPattern()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/createPattern)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasFillStrokeStyles/createPattern)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `CanvasPattern`, `ImageBitmap`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn create_pattern_with_image_bitmap(
@@ -935,7 +935,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = createPattern)]
     #[doc = "The `createPattern()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/createPattern)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasFillStrokeStyles/createPattern)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `CanvasPattern`, `OffscreenCanvas`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn create_pattern_with_offscreen_canvas(
@@ -948,7 +948,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = createPattern)]
     #[doc = "The `createPattern()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/createPattern)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasFillStrokeStyles/createPattern)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `CanvasPattern`, `OffscreenCanvasRenderingContext2d`, `VideoFrame`*"]
     #[doc = ""]
@@ -963,7 +963,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = createRadialGradient)]
     #[doc = "The `createRadialGradient()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/createRadialGradient)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasFillStrokeStyles/createRadialGradient)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `CanvasGradient`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn create_radial_gradient(
@@ -979,7 +979,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = createImageData)]
     #[doc = "The `createImageData()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/createImageData)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasImageData/createImageData)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageData`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn create_image_data_with_sw_and_sh(
@@ -991,7 +991,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = createImageData)]
     #[doc = "The `createImageData()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/createImageData)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasImageData/createImageData)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageData`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn create_image_data_with_imagedata(
@@ -1002,7 +1002,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = getImageData)]
     #[doc = "The `getImageData()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/getImageData)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasImageData/getImageData)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageData`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn get_image_data(
@@ -1016,7 +1016,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = putImageData)]
     #[doc = "The `putImageData()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/putImageData)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasImageData/putImageData)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageData`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn put_image_data(
@@ -1029,7 +1029,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = putImageData)]
     #[doc = "The `putImageData()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/putImageData)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasImageData/putImageData)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ImageData`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn put_image_data_with_dirty_x_and_dirty_y_and_dirty_width_and_dirty_height(
@@ -1045,7 +1045,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = arc)]
     #[doc = "The `arc()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/arc)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasPath/arc)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn arc(
@@ -1059,7 +1059,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = arc)]
     #[doc = "The `arc()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/arc)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasPath/arc)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn arc_with_anticlockwise(
@@ -1074,7 +1074,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = arcTo)]
     #[doc = "The `arcTo()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/arcTo)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasPath/arcTo)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn arc_to(
@@ -1088,7 +1088,7 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = bezierCurveTo)]
     #[doc = "The `bezierCurveTo()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/bezierCurveTo)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasPath/bezierCurveTo)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn bezier_curve_to(
@@ -1103,14 +1103,14 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = closePath)]
     #[doc = "The `closePath()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/closePath)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasPath/closePath)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn close_path(this: &OffscreenCanvasRenderingContext2d);
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = ellipse)]
     #[doc = "The `ellipse()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/ellipse)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasPath/ellipse)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn ellipse(
@@ -1126,7 +1126,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = ellipse)]
     #[doc = "The `ellipse()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/ellipse)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasPath/ellipse)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn ellipse_with_anticlockwise(
@@ -1143,21 +1143,21 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = lineTo)]
     #[doc = "The `lineTo()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/lineTo)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasPath/lineTo)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn line_to(this: &OffscreenCanvasRenderingContext2d, x: f64, y: f64);
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = moveTo)]
     #[doc = "The `moveTo()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/moveTo)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasPath/moveTo)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn move_to(this: &OffscreenCanvasRenderingContext2d, x: f64, y: f64);
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = quadraticCurveTo)]
     #[doc = "The `quadraticCurveTo()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/quadraticCurveTo)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasPath/quadraticCurveTo)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn quadratic_curve_to(
@@ -1170,14 +1170,14 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = rect)]
     #[doc = "The `rect()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/rect)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasPath/rect)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn rect(this: &OffscreenCanvasRenderingContext2d, x: f64, y: f64, w: f64, h: f64);
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = roundRect)]
     #[doc = "The `roundRect()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/roundRect)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasPath/roundRect)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn round_rect(
@@ -1190,7 +1190,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = roundRect)]
     #[doc = "The `roundRect()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/roundRect)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasPath/roundRect)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn round_rect_with_f64(
@@ -1205,7 +1205,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = roundRect)]
     #[doc = "The `roundRect()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/roundRect)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasPath/roundRect)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `DomPointInit`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn round_rect_with_dom_point_init(
@@ -1219,7 +1219,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = roundRect)]
     #[doc = "The `roundRect()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/roundRect)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasPath/roundRect)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn round_rect_with_f64_sequence(
@@ -1233,7 +1233,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = roundRect)]
     #[doc = "The `roundRect()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/roundRect)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasPath/roundRect)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn round_rect_with_dom_point_init_sequence(
@@ -1247,14 +1247,14 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = getLineDash)]
     #[doc = "The `getLineDash()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/getLineDash)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasPathDrawingStyles/getLineDash)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn get_line_dash(this: &OffscreenCanvasRenderingContext2d) -> ::js_sys::Array;
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = setLineDash)]
     #[doc = "The `setLineDash()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/setLineDash)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasPathDrawingStyles/setLineDash)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn set_line_dash(
@@ -1264,49 +1264,49 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = clearRect)]
     #[doc = "The `clearRect()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/clearRect)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRect/clearRect)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn clear_rect(this: &OffscreenCanvasRenderingContext2d, x: f64, y: f64, w: f64, h: f64);
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = fillRect)]
     #[doc = "The `fillRect()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/fillRect)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRect/fillRect)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn fill_rect(this: &OffscreenCanvasRenderingContext2d, x: f64, y: f64, w: f64, h: f64);
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = strokeRect)]
     #[doc = "The `strokeRect()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/strokeRect)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRect/strokeRect)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn stroke_rect(this: &OffscreenCanvasRenderingContext2d, x: f64, y: f64, w: f64, h: f64);
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = reset)]
     #[doc = "The `reset()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/reset)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasState/reset)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn reset(this: &OffscreenCanvasRenderingContext2d);
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = restore)]
     #[doc = "The `restore()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/restore)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasState/restore)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn restore(this: &OffscreenCanvasRenderingContext2d);
     # [wasm_bindgen (method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = save)]
     #[doc = "The `save()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/save)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasState/save)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn save(this: &OffscreenCanvasRenderingContext2d);
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = fillText)]
     #[doc = "The `fillText()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/fillText)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasText/fillText)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn fill_text(
@@ -1318,7 +1318,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = fillText)]
     #[doc = "The `fillText()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/fillText)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasText/fillText)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn fill_text_with_max_width(
@@ -1332,7 +1332,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = measureText)]
     #[doc = "The `measureText()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/measureText)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasText/measureText)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`, `TextMetrics`*"]
     pub fn measure_text(
@@ -1342,7 +1342,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = strokeText)]
     #[doc = "The `strokeText()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/strokeText)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasText/strokeText)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn stroke_text(
@@ -1354,7 +1354,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = strokeText)]
     #[doc = "The `strokeText()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/strokeText)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasText/strokeText)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn stroke_text_with_max_width(
@@ -1368,35 +1368,35 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = getTransform)]
     #[doc = "The `getTransform()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/getTransform)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasTransform/getTransform)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `DomMatrix`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn get_transform(this: &OffscreenCanvasRenderingContext2d) -> Result<DomMatrix, JsValue>;
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = resetTransform)]
     #[doc = "The `resetTransform()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/resetTransform)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasTransform/resetTransform)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn reset_transform(this: &OffscreenCanvasRenderingContext2d) -> Result<(), JsValue>;
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = rotate)]
     #[doc = "The `rotate()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/rotate)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasTransform/rotate)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn rotate(this: &OffscreenCanvasRenderingContext2d, angle: f64) -> Result<(), JsValue>;
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = scale)]
     #[doc = "The `scale()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/scale)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasTransform/scale)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn scale(this: &OffscreenCanvasRenderingContext2d, x: f64, y: f64) -> Result<(), JsValue>;
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = setTransform)]
     #[doc = "The `setTransform()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/setTransform)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasTransform/setTransform)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn set_transform(
@@ -1411,7 +1411,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = setTransform)]
     #[doc = "The `setTransform()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/setTransform)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasTransform/setTransform)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn set_transform_with_default_dom_matrix_2d_init(
@@ -1421,7 +1421,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = setTransform)]
     #[doc = "The `setTransform()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/setTransform)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasTransform/setTransform)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `DomMatrix2dInit`, `OffscreenCanvasRenderingContext2d`*"]
     pub fn set_transform_with_dom_matrix_2d_init(
@@ -1431,7 +1431,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = transform)]
     #[doc = "The `transform()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/transform)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasTransform/transform)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn transform(
@@ -1446,7 +1446,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "OffscreenCanvasRenderingContext2D" , js_name = translate)]
     #[doc = "The `translate()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvasRenderingContext2D/translate)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasTransform/translate)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `OffscreenCanvasRenderingContext2d`*"]
     pub fn translate(

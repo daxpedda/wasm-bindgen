@@ -1384,14 +1384,14 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "SVGElement" , js_name = blur)]
     #[doc = "The `blur()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/SVGElement/blur)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/HTMLOrSVGElement/blur)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `SvgElement`*"]
     pub fn blur(this: &SvgElement) -> Result<(), JsValue>;
     # [wasm_bindgen (catch , method , structural , js_class = "SVGElement" , js_name = focus)]
     #[doc = "The `focus()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/SVGElement/focus)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/HTMLOrSVGElement/focus)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `SvgElement`*"]
     pub fn focus(this: &SvgElement) -> Result<(), JsValue>;
@@ -1399,7 +1399,7 @@ extern "C" {
     # [wasm_bindgen (catch , method , structural , js_class = "SVGElement" , js_name = focus)]
     #[doc = "The `focus()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/SVGElement/focus)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/HTMLOrSVGElement/focus)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `FocusOptions`, `SvgElement`*"]
     pub fn focus_with_options(this: &SvgElement, options: &FocusOptions) -> Result<(), JsValue>;

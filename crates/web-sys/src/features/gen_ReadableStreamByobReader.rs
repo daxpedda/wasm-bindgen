@@ -47,14 +47,14 @@ extern "C" {
     # [wasm_bindgen (method , structural , js_class = "ReadableStreamBYOBReader" , js_name = cancel)]
     #[doc = "The `cancel()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamBYOBReader/cancel)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamGenericReader/cancel)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ReadableStreamByobReader`*"]
     pub fn cancel(this: &ReadableStreamByobReader) -> ::js_sys::Promise;
     # [wasm_bindgen (method , structural , js_class = "ReadableStreamBYOBReader" , js_name = cancel)]
     #[doc = "The `cancel()` method."]
     #[doc = ""]
-    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamBYOBReader/cancel)"]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamGenericReader/cancel)"]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ReadableStreamByobReader`*"]
     pub fn cancel_with_reason(
